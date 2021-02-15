@@ -55,10 +55,10 @@ public class LessonOne {
 
     public static void reverseNumber (int number) {
 
-        StringBuilder stringBuilder = new StringBuilder(String.valueOf(number));
-        stringBuilder.reverse();
+        StringBuilder reversedString = new StringBuilder(String.valueOf(number));
+        reversedString.reverse();
 
-        System.out.println("Original number: " + number + " and Resulting number: " + stringBuilder);
+        System.out.println("Original number: " + number + " and Resulting number: " + reversedString);
         System.out.println();
     }
 
