@@ -67,18 +67,18 @@ public class LessonOne {
 
         char [] inchars = String.valueOf(number).toCharArray();
 
-        int repetitionsCount = 0;
+        boolean repetitions = false;
 
         for (int i = 0; i < inchars.length; i++) {
             for (int j = i+1; j < inchars.length; j++) {
                 if (inchars[i] == inchars [j]) {
-                    repetitionsCount++;
+                    repetitions = true;
                     break;
                 }
             }
         }
 
-        if (repetitionsCount == 0) {
+        if (repetitions == false) {
             System.out.println("In number " + number + " every figure is different!");
         } else {
             System.out.println("In number " + number + " some figures are repeating...");
