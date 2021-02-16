@@ -6,10 +6,8 @@ public class TaskThree {
 
     public static void main(String[] args) {
 
-        Random random = new Random ();
-
         timeCalculation(4500);
-        timeCalculation(random.nextInt(9999999));
+        timeCalculation(new Random ().nextInt(9999999));
     }
 
     public static void timeCalculation (int seconds) {

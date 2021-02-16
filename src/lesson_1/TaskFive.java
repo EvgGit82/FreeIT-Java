@@ -6,9 +6,7 @@ public class TaskFive {
 
     public static void main(String[] args) {
 
-        Random random = new Random ();
-
-        findDifferentNumbers(random.nextInt(9999));
+        findDifferentNumbers(new Random ().nextInt(9999));
 
     }
 
@@ -28,9 +26,9 @@ public class TaskFive {
         }
 
         if (!repetitions) {
-            System.out.println("In number " + number + " every figure is different!");
+            System.out.println("In number " + number + " every digit is different!");
         } else {
-            System.out.println("In number " + number + " some figures are repeating...");
+            System.out.println("In number " + number + " some digits are repeating...");
         }
     }
 
