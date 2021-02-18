@@ -10,26 +10,44 @@ public class TaskFive {
 
     }
 
+
     public static void findDifferentNumbers (int number) {
 
-        char [] inchars = String.valueOf(number).toCharArray();
+        System.out.print("In number " + number);
+
+        int [] digitsArray = new int [findArraySize(number)];
+
+        for (int i = 0; i < digitsArray.length; i++) {
+            digitsArray[i] = number%10;
+            number /= 10;
+        }
 
         boolean repetitions = false;
 
-        for (int i = 0; i < inchars.length; i++) {
-            for (int j = i+1; j < inchars.length; j++) {
-                if (inchars[i] == inchars [j]) {
+        for (int i = 0; i < digitsArray.length; i++) {
+            for (int j = i+1; j < digitsArray.length; j++) {
+                if (digitsArray[i] == digitsArray [j]) {
                     repetitions = true;
                     break;
                 }
             }
         }
 
-        if (!repetitions) {
-            System.out.println("In number " + number + " every digit is different!");
-        } else {
-            System.out.println("In number " + number + " some digits are repeating...");
+        if (!repetitions) { System.out.println(" every digit is different!");
+        } else { System.out.println(" some digits are repeating..."); }
+
+    }
+
+
+    public static int findArraySize (int number) {
+
+        int arraySize = 0;
+
+        while (number > 0) {
+            number /= 10;
+            arraySize++;
         }
+        return arraySize;
     }
 
 }
