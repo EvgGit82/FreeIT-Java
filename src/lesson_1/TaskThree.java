@@ -2,6 +2,14 @@ package lesson_1;
 
 import java.util.Random;
 
+/*
+Имеется 4500 секунд. Вывести в консоль содержащихся в этом количестве секунд:
+А) минут + секунд,
+В) часов + минут + секунд,
+С) дней + часов + минут + секунд,
+D) недель + дней + часов + минут + секунд.
+ */
+
 public class TaskThree {
 
     public static void main(String[] args) {
@@ -24,14 +32,14 @@ public class TaskThree {
 
         System.out.println("In " + seconds + " seconds:");
 
-        System.out.println("- " + minutes + " minute(s) and " + andSeconds + " second(s);");
+        System.out.println("A) " + minutes + " minute(s) and " + andSeconds + " second(s);");
 
-        System.out.println("- " + hours + " hour(s) and " + andMinutes + " minute(s) " + andSeconds + " second(s);");
+        System.out.println("B) " + hours + " hour(s) and " + andMinutes + " minute(s) " + andSeconds + " second(s);");
 
-        System.out.println("- " + days + " day(s) and " + andHours +
+        System.out.println("C) " + days + " day(s) and " + andHours +
                 " hour(s) and " + andMinutes + " minute(s) " + andSeconds+ " second(s);");
 
-        System.out.println("- " + weeks + " week(s) and " + andDays +
+        System.out.println("D) " + weeks + " week(s) and " + andDays +
                 " day(s) and " + andHours + " hour(s) and " + andMinutes + " minute(s) " + andSeconds + " second(s);");
 
         System.out.println();

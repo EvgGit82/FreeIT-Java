@@ -2,6 +2,11 @@ package lesson_1;
 
 import java.util.Random;
 
+/*
+Дано любое натуральное 4-х значное число. Верно ли, что все цифры числа
+различны?
+*/
+
 public class TaskFive {
 
     public static void main(String[] args) {
