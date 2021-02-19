@@ -3,7 +3,7 @@ package lesson_1;
 import java.util.Random;
 
 /*
-Определить число, полученное выписыванием в обратном порядке цифр любого 4-х значного натурального числа n.
+Определить число, полученное выписыванием в обратном порядке цифр любого 4-х значного натурального числа n
 */
 
 public class TaskFour {
@@ -16,12 +16,12 @@ public class TaskFour {
                 + " and Reversed number: " + reverseNumber(originalNumber));
     }
 
-    public static String reverseNumber (int originalNumber) {
+    public static StringBuilder reverseNumber (int originalNumber) {
 
-        String reversedNumber = "";
+        StringBuilder reversedNumber = new StringBuilder();
 
         while (originalNumber >0) {
-            reversedNumber += originalNumber%10;
+            reversedNumber.append(originalNumber%10);
             originalNumber /= 10;
         }
         return reversedNumber;
