@@ -7,7 +7,7 @@ import java.util.Random;
 Создать последовательность случайных чисел, найти и вывести наибольшее из них.
 */
 
-public class Task_13 {
+public class Task13 {
 
     public static void main(String[] args) {
 

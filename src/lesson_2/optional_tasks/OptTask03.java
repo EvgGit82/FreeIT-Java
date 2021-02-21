@@ -1,4 +1,4 @@
-package lesson_2.oprional_tasks;
+package lesson_2.optional_tasks;
 
 /*
 Дано целое число. Если оно является положительным, то прибавить к нему 1.
@@ -7,7 +7,7 @@ package lesson_2.oprional_tasks;
 Вывести полученное число
 */
 
-public class OptTask_03 {
+public class OptTask03 {
     public static void main(String[] args) {
 
         int randomNumber = (int)(-5 + Math.random()* 10);

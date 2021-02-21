@@ -7,7 +7,7 @@ import java.util.Random;
 Определите, является ли число четным
 */
 
-public class Task_06 {
+public class Task06 {
     public static void main(String[] args) {
 
         int randomNumber = new Random().nextInt(999);

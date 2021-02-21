@@ -8,7 +8,7 @@ import java.util.Random;
 (при переворачивании нежелательно создавать еще один массив)
 */
 
-public class Task_15 {
+public class Task15 {
 
     public static void main(String[] args) {
 

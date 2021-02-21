@@ -1,4 +1,4 @@
-package lesson_2.oprional_tasks;
+package lesson_2.optional_tasks;
 
 /*
 Треугольник существует только тогда, когда сумма любых двух его сторон больше третьей.
@@ -9,7 +9,7 @@ package lesson_2.oprional_tasks;
 
 import java.util.Random;
 
-public class OptTask_02 {
+public class OptTask02 {
     public static void main(String[] args) {
 
         Random random = new Random ();

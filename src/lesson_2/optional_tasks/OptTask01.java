@@ -1,4 +1,4 @@
-package lesson_2.oprional_tasks;
+package lesson_2.optional_tasks;
 
 /*
 В переменную записываем число. Надо вывести на экран сколько в этом числе цифр и положительное оно или отрицательное.
@@ -8,7 +8,7 @@ package lesson_2.oprional_tasks;
 
 import java.util.ArrayList;
 
-public class OptTask_01 {
+public class OptTask01 {
     public static void main(String[] args) {
 
         int randomNumber = (int)(-1000 + Math.random()* 2000);

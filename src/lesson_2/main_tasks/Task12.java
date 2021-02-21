@@ -4,7 +4,7 @@ package lesson_2.main_tasks;
 Найдите сумму первых n целых чисел, которые делятся на 3.
 */
 
-public class Task_12 {
+public class Task12 {
 
     public static void main(String[] args) {
 

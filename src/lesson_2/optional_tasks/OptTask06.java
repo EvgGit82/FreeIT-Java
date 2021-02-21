@@ -1,4 +1,4 @@
-package lesson_2.oprional_tasks;
+package lesson_2.optional_tasks;
 
 /*
 Даны 2 числа. Вывести большее из них
@@ -6,7 +6,7 @@ package lesson_2.oprional_tasks;
 
 import java.util.Random;
 
-public class OptTask_06 {
+public class OptTask06 {
 
     public static void main(String[] args) {
 

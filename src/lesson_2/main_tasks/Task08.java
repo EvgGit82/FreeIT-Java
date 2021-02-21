@@ -7,7 +7,7 @@ import java.util.Random;
 Это число – количесво денег в рублях. Вывести это число, добавив к нему слово «рублей» в правильном падеже.
 */
 
-public class Task_08 {
+public class Task08 {
 
     public static void main(String[] args) {
 

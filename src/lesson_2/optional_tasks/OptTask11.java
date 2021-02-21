@@ -1,4 +1,4 @@
-package lesson_2.oprional_tasks;
+package lesson_2.optional_tasks;
 
 /*
 Составьте программу, вычисляющую A*B, не пользуясь операцией умножения.
@@ -6,7 +6,7 @@ package lesson_2.oprional_tasks;
 
 import java.util.Random;
 
-public class OptTask_11 {
+public class OptTask11 {
 
     public static void main(String[] args) {
 

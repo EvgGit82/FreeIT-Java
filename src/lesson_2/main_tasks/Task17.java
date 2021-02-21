@@ -4,7 +4,7 @@ package lesson_2.main_tasks;
 Создать двухмерный квадратный массив, и заполнить его «бабочкой».
 */
 
-public class Task_17 {
+public class Task17 {
 
     public static void main(String[] args) {
 

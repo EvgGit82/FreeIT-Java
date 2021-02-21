@@ -7,7 +7,7 @@ import java.util.Random;
 Создать массив оценок произвольной длины, вывести максимальную и минимальную оценку, её (их) номера
 */
 
-public class Task_14 {
+public class Task14 {
 
     public static void main(String[] args) {
 

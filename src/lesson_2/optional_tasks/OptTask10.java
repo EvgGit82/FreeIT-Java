@@ -1,10 +1,10 @@
-package lesson_2.oprional_tasks;
+package lesson_2.optional_tasks;
 
 /*
 Вычислить: 1+2+4+8+...+256
 */
 
-public class OptTask_10 {
+public class OptTask10 {
     public static void main(String[] args) {
 
         int [] geomentricSequence = new int[50];

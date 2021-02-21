@@ -1,4 +1,4 @@
-package lesson_2.oprional_tasks;
+package lesson_2.optional_tasks;
 
 /*
 В переменную записываете количество программистов.
@@ -8,7 +8,7 @@ package lesson_2.oprional_tasks;
 
 import java.util.Random;
 
-public class OptTask_07 {
+public class OptTask07 {
     public static void main(String[] args) {
 
         int developers = new Random().nextInt(200);

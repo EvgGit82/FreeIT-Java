@@ -1,4 +1,4 @@
-package lesson_2.oprional_tasks;
+package lesson_2.optional_tasks;
 
 /*
 Даны 3 целых числа. Найти количество положительных и отрицательных чисел в исходном наборе.
@@ -6,7 +6,7 @@ package lesson_2.oprional_tasks;
 
 import java.util.Arrays;
 
-public class OptTask_05 {
+public class OptTask05 {
     public static void main(String[] args) {
 
         int[] randomIntegers = new int[10];

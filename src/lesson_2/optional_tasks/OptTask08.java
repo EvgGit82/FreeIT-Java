@@ -1,4 +1,4 @@
-package lesson_2.oprional_tasks;
+package lesson_2.optional_tasks;
 
 /*
 Начав тренировки, спортсмен в первый день пробежал 10 км.
@@ -8,7 +8,7 @@ package lesson_2.oprional_tasks;
 
 import java.text.DecimalFormat;
 
-public class OptTask_08 {
+public class OptTask08 {
     public static void main(String[] args) {
 
         //TODO TEST IT

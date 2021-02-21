@@ -1,4 +1,4 @@
-package lesson_2.oprional_tasks;
+package lesson_2.optional_tasks;
 
 /*
 Одноклеточная амеба каждые 3 часа делится на 2 клетки. Определить, сколько амеб будет через 3, 6, 9, 12,..., 24 часа.
@@ -6,7 +6,7 @@ package lesson_2.oprional_tasks;
 
 import java.util.Random;
 
-public class OptTask_09 {
+public class OptTask09 {
     public static void main(String[] args) {
 
         Random random = new Random();

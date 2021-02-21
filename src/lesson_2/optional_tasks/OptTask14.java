@@ -1,10 +1,10 @@
-package lesson_2.oprional_tasks;
+package lesson_2.optional_tasks;
 
 /*
 Напишите программу, определяющую сумму всех нечетных чисел от 1 до 99
 */
 
-public class OptTask_14 {
+public class OptTask14 {
 
     public static void main(String[] args) {
 

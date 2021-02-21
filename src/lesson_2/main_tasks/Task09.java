@@ -6,7 +6,7 @@ import java.util.Random;
 Изменить пример с суммой чисел таким образом, чтобы рассчитывалась не сумма, а произведение, т.е. факториал числа.
 */
 
-public class Task_09 {
+public class Task09 {
     public static void main(String[] args) {
 
         int numberWithinRange = new Random().nextInt(9);
