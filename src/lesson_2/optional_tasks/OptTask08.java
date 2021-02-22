@@ -11,15 +11,13 @@ import java.text.DecimalFormat;
 public class OptTask08 {
     public static void main(String[] args) {
 
-        //TODO TEST IT
-
         DecimalFormat df = new DecimalFormat(".##");
 
         double dayDistance = 10;
         double totalDistance = dayDistance;
         int days = 7;
 
-        for (int i = 1; i <= days; i++) {
+        for (int i = 2; i <= days; i++) {
             dayDistance += dayDistance/100*10;
             totalDistance += dayDistance;
         }

@@ -11,7 +11,5 @@ public class OptTask12 {
         for (int inch = 1; inch < 21; inch++) {
             System.out.println(inch + " inch(s) = " + (inch*2.54) + " cm.");
         }
-
     }
-
 }

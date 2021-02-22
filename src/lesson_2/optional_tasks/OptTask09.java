@@ -11,11 +11,11 @@ public class OptTask09 {
 
         Random random = new Random();
 
-        int originalAmoebacount = random.nextInt(10);
+        int originalAmoebaCount = random.nextInt(10);
         int hours = random.nextInt(100);
 
         System.out.println("After " + hours + " hours the number of amoeba will make "
-                + countAmoeba(originalAmoebacount, hours) + " animals");
+                + countAmoeba(originalAmoebaCount, hours) + " animals");
     }
 
     public static int countAmoeba (int amoeba,  int hours){

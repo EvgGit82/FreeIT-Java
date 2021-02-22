@@ -13,7 +13,7 @@ public class Task12 {
         int counter = 0;
 
         for (int i =1; counter < numbers; i++) {
-            if (i%3 ==0) {
+            if (i%3 == 0) {
                 totalSum +=i;
                 counter++;
             }

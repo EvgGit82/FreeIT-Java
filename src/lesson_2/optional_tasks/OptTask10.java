@@ -7,10 +7,10 @@ package lesson_2.optional_tasks;
 public class OptTask10 {
     public static void main(String[] args) {
 
-        int [] geomentricSequence = new int[50];
+        int [] geomentricSequence = new int[25];
 
         for (int i = 0 ; i < 25; i++) {
-            geomentricSequence[i] = getPower(2, i);
+            geomentricSequence[i] = calcPower(2, i);
         }
 
         int result = 0;
@@ -24,7 +24,7 @@ public class OptTask10 {
 
     // Since we are not allowed to use Math class methods, I had to write my own Math.pow()
 
-    public static int getPower (int number, int power) {
+    public static int calcPower(int number, int power) {
 
         if (power == 0) { return 1; }
 

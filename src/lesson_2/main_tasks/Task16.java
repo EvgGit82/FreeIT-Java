@@ -43,12 +43,12 @@ public class Task16 {
 
         int totalSum = 0;
 
-        if (randomNumbers[indexMin] < randomNumbers[indexMax]) {
+        if (indexMin < indexMax) {
             for (int i = indexMin+1; i < indexMax; i++) {
                 totalSum += randomNumbers[i];
             }
         } else {
-            for (int i = indexMax+1; i < randomNumbers[indexMin]; i++) {
+            for (int i = indexMax+1; i < indexMin; i++) {
                 totalSum += randomNumbers[i];
             }
         }

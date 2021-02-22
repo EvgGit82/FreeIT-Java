@@ -20,7 +20,11 @@ public class Task15 {
             randomNumbers[i] = random.nextInt(100);
         }
 
-        System.out.println(Arrays.toString(randomNumbers));
+        for (int num : randomNumbers) {
+            System.out.print(num + " ");
+        }
+
+        System.out.println();
 
         for (int i = 0; i < randomNumbers.length/2; i++) {
             int temp = randomNumbers[i];
@@ -28,7 +32,9 @@ public class Task15 {
             randomNumbers[randomNumbers.length-1-i] = temp;
         }
 
-        System.out.println(Arrays.toString(randomNumbers));
+        for (int num : randomNumbers) {
+            System.out.print(num + " ");
+        }
     }
 
 }

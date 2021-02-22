@@ -26,9 +26,6 @@ public class Task11 {
             }
         }
 
-        String result = count > 1 ? " is NOT a simple number" : " is a SIMPLE number";
-
-        return result;
+        return count > 1 ? " is NOT a simple number" : " is a SIMPLE number";
     }
-
 }
