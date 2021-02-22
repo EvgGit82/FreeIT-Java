@@ -31,7 +31,7 @@ public class OptTask10 {
         int multiplier = number;
 
         for (int i = 1; i < power; i++) {
-            number = number*multiplier;
+            number *= multiplier;
         }
         return number;
     }
