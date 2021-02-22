@@ -28,10 +28,10 @@ public class OptTask10 {
 
         if (power == 0) { return 1; }
 
-        int originalNumber = number;
+        int multiplier = number;
 
         for (int i = 1; i < power; i++) {
-            number = number*originalNumber;
+            number = number*multiplier;
         }
         return number;
     }
