@@ -30,8 +30,8 @@ public class Task17 {
     public static void showArray (int [][] array ) {
 
         for (int[] ints : array) {
-            for (int j = 0; j < ints.length; j++) {
-                System.out.print(ints[j] + " ");
+            for (int anInt : ints) {
+                System.out.print(anInt + " ");
             }
             System.out.println();
         }
