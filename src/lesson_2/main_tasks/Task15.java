@@ -1,6 +1,5 @@
 package lesson_2.main_tasks;
 
-import java.util.Arrays;
 import java.util.Random;
 
 /*

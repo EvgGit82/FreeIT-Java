@@ -21,14 +21,11 @@ public class Task08 {
         if (10 < (amount % 100) && (amount % 100) < 15) {
             return " рублей";
         } else {
-            switch (amount % 10) {
-                case 1:
-                    return " рубль";
-                case 2, 3, 4:
-                    return " рубля";
-                default:
-                    return " рублей";
-            }
+            return switch (amount % 10) {
+                case 1 -> " рубль";
+                case 2, 3, 4 -> " рубля";
+                default -> " рублей";
+            };
         }
     }
 }

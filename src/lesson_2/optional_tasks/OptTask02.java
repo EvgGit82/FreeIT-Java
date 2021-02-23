@@ -28,7 +28,7 @@ public class OptTask02 {
     }
 
     public static boolean compareSides (int a, int b, int c){
-        return a < (b+c) ? true : false;
+        return a < (b + c);
     }
 
 }

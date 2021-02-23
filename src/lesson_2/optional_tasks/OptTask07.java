@@ -18,16 +18,16 @@ public class OptTask07 {
 
     public static StringBuilder defineCase (int number) {
 
-        StringBuilder result = new StringBuilder("");
+        StringBuilder result = new StringBuilder();
 
         if ((number%100) > 10 && (number%100)<15) {
             return result.append(" программистов.");
         } else {
-            switch (number%10) {
-                case 1: return result.append(" программист.");
-                case 2, 3, 4: return result.append(" программиста.");
-                default: return  result.append(" программистов.");
-            }
+            return switch (number % 10) {
+                case 1 -> result.append(" программист.");
+                case 2, 3, 4 -> result.append(" программиста.");
+                default -> result.append(" программистов.");
+            };
         }
     }
 }

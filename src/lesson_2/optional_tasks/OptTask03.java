@@ -12,13 +12,13 @@ public class OptTask03 {
 
         int randomNumber = (int)(-5 + Math.random()* 10);
 
-        StringBuilder result = new StringBuilder("");
+        StringBuilder result = new StringBuilder();
 
         if (randomNumber > 0) {
-            result.append("The original number " + randomNumber + " is positive and the resulting value is: ");
+            result.append("The original number ").append(randomNumber).append(" is positive and the resulting value is: ");
             randomNumber +=1;
         } else if (randomNumber < 0) {
-            result.append("The original number " + randomNumber + " is negative and the resulting value is: ");
+            result.append("The original number ").append(randomNumber).append(" is negative and the resulting value is: ");
             randomNumber -=2;
         } else {
             result.append("The original number is zero and the resulting value is: ");

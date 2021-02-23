@@ -29,9 +29,9 @@ public class Task17 {
 
     public static void showArray (int [][] array ) {
 
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                System.out.print(array[i][j] + " ");
+        for (int[] ints : array) {
+            for (int j = 0; j < ints.length; j++) {
+                System.out.print(ints[j] + " ");
             }
             System.out.println();
         }
