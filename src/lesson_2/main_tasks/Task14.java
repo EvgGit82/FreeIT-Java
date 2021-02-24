@@ -16,7 +16,7 @@ public class Task14 {
         int [] randomNumbers = new int [10];
 
         for (int i = 0; i < randomNumbers.length; i++) {
-            randomNumbers[i] = random.nextInt(100);
+            randomNumbers[i] = random.nextInt(10)+1;
         }
 
         System.out.println(Arrays.toString(randomNumbers));
