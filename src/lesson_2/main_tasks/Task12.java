@@ -10,7 +10,7 @@ public class Task12 {
 
         int n = 4;
 
-        System.out.println("Total sum of " + n + " three numbers makes " + getSumOfN(n));
+        System.out.println("Total sum of " + n + " first numbers divisible by three makes " + getSumOfN(n));
     }
 
     public static int getSumOfN (int n) {
