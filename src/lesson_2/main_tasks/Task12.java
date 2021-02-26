@@ -8,18 +8,23 @@ public class Task12 {
 
     public static void main(String[] args) {
 
+        int n = 4;
+
+        System.out.println("Total sum of " + n + " three numbers makes " + getSumOfN(n));
+    }
+
+    public static int getSumOfN (int n) {
+
         int totalSum = 0;
-        int numbers = 3;
         int counter = 0;
 
-        for (int i =1; counter < numbers; i++) {
+        for (int i =1; counter < n; i++) {
             if (i%3 == 0) {
                 totalSum +=i;
                 counter++;
             }
         }
-
-        System.out.println("Total sum of three numbers makes " + totalSum);
+        return totalSum;
     }
 
 }
