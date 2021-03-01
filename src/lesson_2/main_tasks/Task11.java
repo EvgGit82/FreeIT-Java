@@ -12,20 +12,21 @@ public class Task11 {
 
         int number = new Random().nextInt(100);
 
-        System.out.println(number + isNumberSimple(number));
+        System.out.println(number + isNumberPrime(number));
 
     }
 
-    public static String isNumberSimple (int number) {
+    public static String isNumberPrime(int number) {
 
         int count = 0;
 
         for (int i = 2; i <= number; i++) {
             if (number%i == 0) {
                 count++;
+                if (count > 1) {break;}
             }
         }
 
-        return count > 1 ? " is NOT a simple number" : " is a SIMPLE number";
+        return count > 1 ? " is NOT a prime number" : " is a PRIME number";
     }
 }

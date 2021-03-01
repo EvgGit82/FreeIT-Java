@@ -18,8 +18,16 @@ public class Task07 {
 
         System.out.println("a = " + sideA + "; b = " + sideB + "; r = " + radius);
 
-        System.out.println((radius*2) >= Math.sqrt((sideA*sideA) + (sideB*sideB)) ? "The circle WILL fully cover the rectangle."
+        boolean canCover = canCircleCoverRectangle(sideA, sideB, radius);
+
+        System.out.println(canCover ? "The circle WILL fully cover the rectangle."
                 : "The circle will NOT cover the rectangle.");
 
     }
+
+    public static boolean canCircleCoverRectangle (int sideA, int sideB, int radius) {
+        // Comparing rectangle diagonal with the circle diameter
+        return (radius*2) >= Math.sqrt((sideA*sideA) + (sideB*sideB));
+    }
+
 }

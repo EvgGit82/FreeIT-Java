@@ -18,13 +18,9 @@ public class Task09 {
 
         int result = 1;
 
-        if (number == 0 || number == 1) {
-            return 1;
-        } else {
             for (int i = 2; i <= number; i++) {
                 result *= i;
             }
             return result;
         }
-    }
 }
