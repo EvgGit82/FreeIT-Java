@@ -87,51 +87,28 @@ public class TickTackToe {
             }
 
 
-            if ((gameField[0][0] == 'X') && (gameField[0][1] == 'X') && (gameField[0][2] == 'X')) {
+            if (((gameField[0][0] == 'X') && (gameField[0][1] == 'X') && (gameField[0][2] == 'X')) ||
+                    ((gameField[1][0] == 'X') && (gameField[1][1] == 'X') && (gameField[1][2] == 'X')) ||
+                    ((gameField[2][0] == 'X') && (gameField[2][1] == 'X') && (gameField[2][2] == 'X')) ||
+                    ((gameField[0][0] == 'X') && (gameField[1][0] == 'X') && (gameField[2][0] == 'X')) ||
+                    ((gameField[0][1] == 'X') && (gameField[1][1] == 'X') && (gameField[2][1] == 'X')) ||
+                    ((gameField[0][2] == 'X') && (gameField[1][2] == 'X') && (gameField[2][2] == 'X'))) {
                 System.out.println(format(WIN_MESSAGE, PLAYER_ONE));
                 break;
-            } else if ((gameField[1][0] == 'X') && (gameField[1][1] == 'X') && (gameField[1][2] == 'X')) {
-                System.out.println(format(WIN_MESSAGE, PLAYER_ONE));
-                break;
-            } else if ((gameField[2][0] == 'X') && (gameField[2][1] == 'X') && (gameField[2][2] == 'X')) {
-                System.out.println(format(WIN_MESSAGE, PLAYER_ONE));
-                break;
-            } else if ((gameField[0][0] == 'X') && (gameField[1][0] == 'X') && (gameField[2][0] == 'X')) {
-                System.out.println(format(WIN_MESSAGE, PLAYER_ONE));
-                break;
-            } else if ((gameField[0][1] == 'X') && (gameField[1][1] == 'X') && (gameField[2][1] == 'X')) {
-                System.out.println(format(WIN_MESSAGE, PLAYER_ONE));
-                break;
-            } else if ((gameField[0][2] == 'X') && (gameField[1][2] == 'X') && (gameField[2][2] == 'X')) {
-                System.out.println(format(WIN_MESSAGE, PLAYER_ONE));
-                break;
-            } else if ((gameField[0][0] == 'O') && (gameField[0][1] == 'O') && (gameField[0][2] == 'O')) {
+            } else if (((gameField[0][0] == 'O') && (gameField[0][1] == 'O') && (gameField[0][2] == 'O')) ||
+                    ((gameField[1][0] == 'O') && (gameField[1][1] == 'O') && (gameField[1][2] == 'O')) ||
+                    ((gameField[2][0] == 'O') && (gameField[2][1] == 'O') && (gameField[2][2] == 'O')) ||
+                    ((gameField[0][0] == 'O') && (gameField[1][0] == 'O') && (gameField[2][0] == 'O')) ||
+                    ((gameField[0][1] == 'O') && (gameField[1][1] == 'O') && (gameField[2][1] == 'O')) ||
+                    ((gameField[0][2] == 'O') && (gameField[1][2] == 'O') && (gameField[2][2] == 'O'))) {
                 System.out.println(format(WIN_MESSAGE, PLAYER_TWO));
                 break;
-            } else if ((gameField[1][0] == 'O') && (gameField[1][1] == 'O') && (gameField[1][2] == 'O')) {
-                System.out.println(format(WIN_MESSAGE, PLAYER_TWO));
-                break;
-            } else if ((gameField[2][0] == 'O') && (gameField[2][1] == 'O') && (gameField[2][2] == 'O')) {
-                System.out.println(format(WIN_MESSAGE, PLAYER_TWO));
-                break;
-            } else if ((gameField[0][0] == 'O') && (gameField[1][0] == 'O') && (gameField[2][0] == 'O')) {
-                System.out.println(format(WIN_MESSAGE, PLAYER_TWO));
-                break;
-            } else if ((gameField[0][1] == 'O') && (gameField[1][1] == 'O') && (gameField[2][1] == 'O')) {
-                break;
-            } else if ((gameField[0][2] == 'O') && (gameField[1][2] == 'O') && (gameField[2][2] == 'O')) {
-                System.out.println(format(WIN_MESSAGE, PLAYER_TWO));
-                break;
-            } else if ((gameField[0][0] == 'X') && (gameField[1][1] == 'X') && (gameField[2][2] == 'X')) {
+            } else if (((gameField[0][0] == 'X') && (gameField[1][1] == 'X') && (gameField[2][2] == 'X')) ||
+                    ((gameField[0][2] == 'X') && (gameField[1][1] == 'X') && (gameField[2][0] == 'X'))) {
                 System.out.println(format(WIN_MESSAGE, PLAYER_ONE));
                 break;
-            }  else if ((gameField[0][2] == 'X') && (gameField[1][1] == 'X') && (gameField[2][0] == 'X')) {
-                System.out.println(format(WIN_MESSAGE, PLAYER_ONE));
-                break;
-            } else if ((gameField[0][0] == 'O') && (gameField[1][1] == 'O') && (gameField[2][2] == 'O')) {
-                System.out.println(format(WIN_MESSAGE, PLAYER_TWO));
-                break;
-            }  else if ((gameField[0][2] == 'O') && (gameField[1][1] == 'O') && (gameField[2][0] == 'O')) {
+            } else if (((gameField[0][0] == 'O') && (gameField[1][1] == 'O') && (gameField[2][2] == 'O')) ||
+                    ((gameField[0][2] == 'O') && (gameField[1][1] == 'O') && (gameField[2][0] == 'O'))) {
                 System.out.println(format(WIN_MESSAGE, PLAYER_TWO));
                 break;
             }  else if (noEmptyLeft){
