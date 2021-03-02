@@ -17,7 +17,7 @@ public class TickTackToe {
 
     private static final String PLAYER_ONE = "Player 1";
     private static final String PLAYER_TWO = "Player 2";
-    private static final String winMessage = "Game Over! %s wins!";
+    private static final String WIN_MESSAGE = "Game Over! %s wins!";
 
 
     public static void main(String[] args) {
@@ -88,51 +88,51 @@ public class TickTackToe {
 
 
             if ((gameField[0][0] == 'X') && (gameField[0][1] == 'X') && (gameField[0][2] == 'X')) {
-                System.out.println(format(winMessage, PLAYER_ONE));
+                System.out.println(format(WIN_MESSAGE, PLAYER_ONE));
                 break;
             } else if ((gameField[1][0] == 'X') && (gameField[1][1] == 'X') && (gameField[1][2] == 'X')) {
-                System.out.println(format(winMessage, PLAYER_ONE));
+                System.out.println(format(WIN_MESSAGE, PLAYER_ONE));
                 break;
             } else if ((gameField[2][0] == 'X') && (gameField[2][1] == 'X') && (gameField[2][2] == 'X')) {
-                System.out.println(format(winMessage, PLAYER_ONE));
+                System.out.println(format(WIN_MESSAGE, PLAYER_ONE));
                 break;
             } else if ((gameField[0][0] == 'X') && (gameField[1][0] == 'X') && (gameField[2][0] == 'X')) {
-                System.out.println(format(winMessage, PLAYER_ONE));
+                System.out.println(format(WIN_MESSAGE, PLAYER_ONE));
                 break;
             } else if ((gameField[0][1] == 'X') && (gameField[1][1] == 'X') && (gameField[2][1] == 'X')) {
-                System.out.println(format(winMessage, PLAYER_ONE));
+                System.out.println(format(WIN_MESSAGE, PLAYER_ONE));
                 break;
             } else if ((gameField[0][2] == 'X') && (gameField[1][2] == 'X') && (gameField[2][2] == 'X')) {
-                System.out.println(format(winMessage, PLAYER_ONE));
+                System.out.println(format(WIN_MESSAGE, PLAYER_ONE));
                 break;
             } else if ((gameField[0][0] == 'O') && (gameField[0][1] == 'O') && (gameField[0][2] == 'O')) {
-                System.out.println(format(winMessage, PLAYER_TWO));
+                System.out.println(format(WIN_MESSAGE, PLAYER_TWO));
                 break;
             } else if ((gameField[1][0] == 'O') && (gameField[1][1] == 'O') && (gameField[1][2] == 'O')) {
-                System.out.println(format(winMessage, PLAYER_TWO));
+                System.out.println(format(WIN_MESSAGE, PLAYER_TWO));
                 break;
             } else if ((gameField[2][0] == 'O') && (gameField[2][1] == 'O') && (gameField[2][2] == 'O')) {
-                System.out.println(format(winMessage, PLAYER_TWO));
+                System.out.println(format(WIN_MESSAGE, PLAYER_TWO));
                 break;
             } else if ((gameField[0][0] == 'O') && (gameField[1][0] == 'O') && (gameField[2][0] == 'O')) {
-                System.out.println(format(winMessage, PLAYER_TWO));
+                System.out.println(format(WIN_MESSAGE, PLAYER_TWO));
                 break;
             } else if ((gameField[0][1] == 'O') && (gameField[1][1] == 'O') && (gameField[2][1] == 'O')) {
                 break;
             } else if ((gameField[0][2] == 'O') && (gameField[1][2] == 'O') && (gameField[2][2] == 'O')) {
-                System.out.println(format(winMessage, PLAYER_TWO));
+                System.out.println(format(WIN_MESSAGE, PLAYER_TWO));
                 break;
             } else if ((gameField[0][0] == 'X') && (gameField[1][1] == 'X') && (gameField[2][2] == 'X')) {
-                System.out.println(format(winMessage, PLAYER_ONE));
+                System.out.println(format(WIN_MESSAGE, PLAYER_ONE));
                 break;
             }  else if ((gameField[0][2] == 'X') && (gameField[1][1] == 'X') && (gameField[2][0] == 'X')) {
-                System.out.println(format(winMessage, PLAYER_ONE));
+                System.out.println(format(WIN_MESSAGE, PLAYER_ONE));
                 break;
             } else if ((gameField[0][0] == 'O') && (gameField[1][1] == 'O') && (gameField[2][2] == 'O')) {
-                System.out.println(format(winMessage, PLAYER_TWO));
+                System.out.println(format(WIN_MESSAGE, PLAYER_TWO));
                 break;
             }  else if ((gameField[0][2] == 'O') && (gameField[1][1] == 'O') && (gameField[2][0] == 'O')) {
-                System.out.println(format(winMessage, PLAYER_TWO));
+                System.out.println(format(WIN_MESSAGE, PLAYER_TWO));
                 break;
             }  else if (noEmptyLeft){
                 System.out.println("It's a draw! No one wins!");
