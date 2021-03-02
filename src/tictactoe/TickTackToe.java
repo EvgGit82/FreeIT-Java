@@ -61,7 +61,6 @@ public class TickTackToe {
                 int column = Integer.parseInt(scanner.nextLine().trim());
                 column--;
 
-                //TODO Write coordinates correctness check
 
                 if ((player.equals(PLAYER_ONE)) && (gameField[row][column] != 'X') && (gameField[row][column] != 'O')) {
                     gameField[row][column] = 'X';
@@ -76,6 +75,7 @@ public class TickTackToe {
                 }
             }
 
+
             boolean noEmptyLeft = true;
 
             for (char[] chars : gameField) {
@@ -85,6 +85,7 @@ public class TickTackToe {
                     }
                 }
             }
+
 
             if ((gameField[0][0] == 'X') && (gameField[0][1] == 'X') && (gameField[0][2] == 'X')) {
                 System.out.println(format(winMessage, PLAYER_ONE));
