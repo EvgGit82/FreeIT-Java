@@ -18,9 +18,6 @@ public class TickTackToe {
     private static final String PLAYER_ONE = "Player 1";
     private static final String PLAYER_TWO = "Player 2";
     private static final String winMessage = "Game Over! %s wins!";
-    private static String player;
-    private static boolean isRunning;
-    private static boolean moveIsFinished;
 
 
     public static void main(String[] args) {
@@ -52,10 +49,8 @@ public class TickTackToe {
 
             moveIsFinished = false;
 
-            // Player Move
             while (!moveIsFinished) {
 
-                //Print Game Field
                 for (char[] chars : gameField) {
                     for (int j = 0; j < gameField.length; j++) {
                         System.out.print(chars[j] + " ");
