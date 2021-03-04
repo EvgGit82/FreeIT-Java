@@ -23,9 +23,9 @@ public class Task13 {
 
         int max = randomNumbers[0];
 
-        for (int randomNumber : randomNumbers) {
-            if (randomNumber > max) {
-                max = randomNumber;
+        for (int i = 1; i < randomNumbers.length; i++) {
+            if (randomNumbers[i] > max){
+                max = randomNumbers[i];
             }
         }
 

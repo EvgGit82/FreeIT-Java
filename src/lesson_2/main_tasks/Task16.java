@@ -13,7 +13,7 @@ public class Task16 {
 
         Random random = new Random();
 
-        int [] randomNumbers = new int [10];
+        int[] randomNumbers = new int[10];
 
         for (int i = 0; i < randomNumbers.length; i++) {
             randomNumbers[i] = random.nextInt(100);
@@ -43,17 +43,14 @@ public class Task16 {
 
         int totalSum = 0;
 
-        if (indexMin < indexMax) {
-            for (int i = indexMin+1; i < indexMax; i++) {
-                totalSum += randomNumbers[i];
-            }
-        } else {
-            for (int i = indexMax+1; i < indexMin; i++) {
-                totalSum += randomNumbers[i];
-            }
+        int firstNumberIndex = Math.min(indexMax, indexMin);
+        int lastNumberIndex = Math.max(indexMax, indexMin);
+
+        for (int i = firstNumberIndex + 1; i < lastNumberIndex; i++) {
+            totalSum += randomNumbers[i];
         }
 
-        System.out.println("Total sum between the minimum and maximum units makes " + totalSum);
-    }
+            System.out.println("Total sum between the minimum and maximum units makes " + totalSum);
 
+    }
 }

@@ -12,11 +12,10 @@ public class Task11 {
 
         int number = new Random().nextInt(100);
 
-        System.out.println(number + isNumberPrime(number));
-
+        System.out.println(number + ((isNumberPrime(number))? " is NOT a prime number" : " is a PRIME number"));
     }
 
-    public static String isNumberPrime(int number) {
+    public static boolean isNumberPrime(int number) {
 
         int count = 0;
 
@@ -26,7 +25,6 @@ public class Task11 {
                 if (count > 1) {break;}
             }
         }
-
-        return count > 1 ? " is NOT a prime number" : " is a PRIME number";
+        return count > 1;
     }
 }

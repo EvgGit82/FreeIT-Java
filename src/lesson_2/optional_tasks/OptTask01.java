@@ -33,14 +33,14 @@ public class OptTask01 {
 
         int tempNum = Math.abs(number);
 
-        ArrayList<Integer> tempDigits = new ArrayList<>();
+        int digitCount = 0;
 
         while (tempNum > 0) {
-            tempDigits.add(tempNum%10);
             tempNum /= 10;
+            digitCount++;
         }
 
-        return tempDigits.size();
+        return digitCount;
     }
 
 }
