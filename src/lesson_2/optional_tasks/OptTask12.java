@@ -6,10 +6,15 @@ package lesson_2.optional_tasks;
 */
 
 public class OptTask12 {
+
+    private static final double INCH = 2.54;
+
+
     public static void main(String[] args) {
 
-        for (int inch = 1; inch < 21; inch++) {
-            System.out.println(inch + " inch(s) = " + (inch*2.54) + " cm.");
+
+        for (int inches = 1; inches < 21; inches++) {
+            System.out.println(inches + " inch(s) = " + (inches*INCH) + " cm.");
         }
     }
 }

@@ -9,10 +9,8 @@ public class OptTask13 {
 
         System.out.print("Every even number from 2 to 100 inclusive ");
 
-        for (int i = 2; i < 101; i++) {
-            if (i%2 ==0) {
+        for (int i = 2; i < 101; i+=2) {
                 System.out.print(i + " ");
-            }
         }
     }
 }

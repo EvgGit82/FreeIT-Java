@@ -10,10 +10,8 @@ public class OptTask14 {
 
         int totalSum = 0;
 
-        for (int i = 1; i < 100; i++) {
-            if (i%2 !=0){
+        for (int i = 1; i < 100; i+=2) {
                 totalSum +=i;
-            }
         }
 
         System.out.println("Total amount of every odd number from 1 to 99 makes " + totalSum);
