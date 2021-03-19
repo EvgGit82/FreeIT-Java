@@ -29,6 +29,9 @@ public class Runner {
             showMenu();
             System.out.println();
         }
+
+        computer.burnDown();
+        System.exit(0);
     }
 
     public static void showMenu () throws Throwable {
