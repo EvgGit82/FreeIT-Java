@@ -38,12 +38,14 @@ public class ClothingRunner {
 
         for (Human human : humansList) {
             human.putClothesOn();
+            System.out.println();
         }
 
         System.out.println();
 
         for (Human human : humansList) {
             human.takeClothesOff();
+            System.out.println();
         }
     }
 }
