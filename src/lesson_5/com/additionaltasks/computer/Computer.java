@@ -1,4 +1,4 @@
-package lesson_5.com.additionaltasks.computerproject;
+package lesson_5.com.additionaltasks.computer;
 
 import java.util.Random;
 import java.util.Scanner;

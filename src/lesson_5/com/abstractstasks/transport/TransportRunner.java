@@ -1,11 +1,10 @@
-package lesson_5.com.abstractclassestasks.transport_project;
+package lesson_5.com.abstractstasks.transport;
 
-import lesson_5.com.abstractclassestasks.transport_project.abstracts.Transport;
-import lesson_5.com.abstractclassestasks.transport_project.classes.CargoLandTransport;
-import lesson_5.com.abstractclassestasks.transport_project.classes.CivilAirPlane;
-import lesson_5.com.abstractclassestasks.transport_project.classes.MilitaryAirPlane;
-import lesson_5.com.abstractclassestasks.transport_project.classes.PassengerLandTransport;
-import lesson_5.com.abstractclassestasks.transport_project.enums.Model;
+import lesson_5.com.abstractstasks.transport.classes.CargoLandTransport;
+import lesson_5.com.abstractstasks.transport.classes.CivilAirPlane;
+import lesson_5.com.abstractstasks.transport.classes.MilitaryAirPlane;
+import lesson_5.com.abstractstasks.transport.classes.PassengerLandTransport;
+import lesson_5.com.abstractstasks.transport.enums.Model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +24,8 @@ public class TransportRunner {
                 Model.F_16, 21, 100, false, 0);
 
 
+        System.out.println();
+
         System.out.println(passengerCar.toString());
         passengerCar.printDistanceAndFuelConsumptionCalculationResults(2.5);
 
@@ -42,15 +43,18 @@ public class TransportRunner {
 
         System.out.println();
 
-        System.out.println(interceptor.toString());
-        System.out.println(interceptor.launchMissile());
-        System.out.println(interceptor.escapeSystemlaunch());
 
-        System.out.println();
+        List<MilitaryAirPlane> militaryPlanesList = new ArrayList<>(){{
+            add(interceptor);
+            add(fighter);
+        }};
 
-        System.out.println(fighter.toString());
-        System.out.println(fighter.launchMissile());
-        System.out.println(fighter.escapeSystemlaunch());
+        for (MilitaryAirPlane plane : militaryPlanesList) {
+            System.out.println(plane.toString());
+            System.out.println(plane.launchMissile());
+            System.out.println(plane.escapeSystemlaunch());
+            System.out.println();
+        }
 
     }
 }

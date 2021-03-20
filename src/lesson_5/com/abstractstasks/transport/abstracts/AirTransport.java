@@ -1,6 +1,6 @@
-package lesson_5.com.abstractclassestasks.transport_project.abstracts;
+package lesson_5.com.abstractstasks.transport.abstracts;
 
-import lesson_5.com.abstractclassestasks.transport_project.enums.Model;
+import lesson_5.com.abstractstasks.transport.enums.Model;
 
 public class AirTransport extends Transport {
 

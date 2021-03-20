@@ -1,7 +1,7 @@
-package lesson_5.com.abstractclassestasks.transport_project.classes;
+package lesson_5.com.abstractstasks.transport.classes;
 
-import lesson_5.com.abstractclassestasks.transport_project.abstracts.LandTransport;
-import lesson_5.com.abstractclassestasks.transport_project.enums.Model;
+import lesson_5.com.abstractstasks.transport.abstracts.LandTransport;
+import lesson_5.com.abstractstasks.transport.enums.Model;
 
 public class CargoLandTransport extends LandTransport {
 
