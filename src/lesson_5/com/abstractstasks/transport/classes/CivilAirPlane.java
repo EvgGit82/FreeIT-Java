@@ -21,11 +21,8 @@ public class CivilAirPlane extends AirTransport {
 
     @Override
     public String toString() {
-        return "Civil Air Plane [model = " + model + ", wing span = " + wingSpan
-                + "m, minimum take-off strip length = "  + minimumTakeOffStripLength + "m., power = "
-                + power + "h.p., maximum speed = " + maximumSpeed + "km/h, weight = "
-                + weight + "t., number of passengers = " + passengersNumbers + ", business class availability = "
-                + hasBusinessClass + ", power in kW = " + calculatePowerINKiloWatts() + "kW]";
+        return "Passenger Plane [" + super.toString() + ", passenger capacity = " + passengersNumbers
+                + " passengers, business class availability = " + hasBusinessClass + ", power in kW = "
+                + calculatePowerINKiloWatts() + "kW]";
     }
-
 }

@@ -25,11 +25,8 @@ public class MilitaryAirPlane extends AirTransport {
 
     @Override
     public String toString() {
-        return "Military Air Plane [model = " + model + ", wing span = " + wingSpan
-                + "m, minimum take-off strip length = " + minimumTakeOffStripLength + "m, power = " + power +
-                "h.p., maximumSpeed = " + maximumSpeed + "km/h, weight = "
-                + weight + "t., escape system availability = " + hasEscapeSystem + ", power in kW = " +
-                calculatePowerINKiloWatts() + "kW]";
+        return "Military Plane [" + super.toString() + ", escape system availability = " + hasEscapeSystem + ", number of missiles = "
+                + numberOfMissiles + ", power in kW = " + calculatePowerINKiloWatts() + "kW]";
     }
 
 }

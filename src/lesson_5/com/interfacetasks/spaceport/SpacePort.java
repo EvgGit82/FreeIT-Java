@@ -14,7 +14,7 @@ public class SpacePort {
             }
             start.start();
         } else {
-            System.out.println("Prestart system check failed...");
+            System.out.println("Prestart system check failed... Wait for the next launch.");
         }
     }
 

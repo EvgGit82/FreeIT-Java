@@ -20,4 +20,8 @@ public abstract class Transport {
         return power*0.74;
     }
 
+    @Override
+    public String toString() {
+        return "model = " + model + ", power = " + power + ", maximum speed = " + maximumSpeed + ", weight = " + weight;
+    }
 }

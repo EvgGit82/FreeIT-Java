@@ -13,4 +13,10 @@ public class AirTransport extends Transport {
         this.wingSpan = wingSpan;
         this.minimumTakeOffStripLength = minimumTakeOffStripLength;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", wing span = " + wingSpan + ", minimum take-off strip length = "
+                + minimumTakeOffStripLength;
+    }
 }

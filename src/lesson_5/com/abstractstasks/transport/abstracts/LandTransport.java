@@ -13,4 +13,9 @@ public abstract class LandTransport extends Transport {
         this.numberOfWheels = numberOfWheels;
         this.fuelConsumption = fuelConsumption;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", number of wheels = " + numberOfWheels + ", fuel consumption = " + fuelConsumption;
+    }
 }
