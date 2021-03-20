@@ -32,6 +32,4 @@ public class MilitaryAirPlane extends AirTransport {
                 calculatePowerINKiloWatts() + "kW]";
     }
 
-
-
 }

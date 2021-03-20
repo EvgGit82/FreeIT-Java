@@ -18,11 +18,12 @@ public class TransportRunner {
                 Model.MAZ, 6, 16.3, 18);
         CivilAirPlane passengerJet = new CivilAirPlane(30843, 2335, 487.5,
                 Model.BOEING, 63, 300, 624, true);
-        MilitaryAirPlane interceptor = new MilitaryAirPlane(10333, 3000, 100,
-                Model.F_21, 21, 100, true, 1);
-        MilitaryAirPlane fighter = new MilitaryAirPlane(10333, 3000, 100,
-                Model.F_16, 21, 100, false, 0);
-
+        List<MilitaryAirPlane> militaryPlanesList = new ArrayList<>(){{
+            add(new MilitaryAirPlane(10333, 3000, 100,
+                    Model.F_21, 21, 100, true, 1));
+            add(new MilitaryAirPlane(10333, 3000, 100,
+                    Model.F_16, 21, 100, false, 0));
+        }};
 
         System.out.println();
 
@@ -43,18 +44,11 @@ public class TransportRunner {
 
         System.out.println();
 
-
-        List<MilitaryAirPlane> militaryPlanesList = new ArrayList<>(){{
-            add(interceptor);
-            add(fighter);
-        }};
-
         for (MilitaryAirPlane plane : militaryPlanesList) {
             System.out.println(plane.toString());
             System.out.println(plane.launchMissile());
             System.out.println(plane.escapeSystemlaunch());
             System.out.println();
         }
-
     }
 }

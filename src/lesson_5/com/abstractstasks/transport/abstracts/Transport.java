@@ -20,5 +20,4 @@ public abstract class Transport {
         return power*0.74;
     }
 
-
 }

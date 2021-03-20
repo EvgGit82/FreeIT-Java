@@ -19,7 +19,6 @@ public class CivilAirPlane extends AirTransport {
         return (passengersNumbers - passengerSeatsRequired) >= 0 ? "The jet has enough seats." : "You need a larger jet.";
     }
 
-
     @Override
     public String toString() {
         return "Civil Air Plane [model = " + model + ", wing span = " + wingSpan
@@ -28,6 +27,5 @@ public class CivilAirPlane extends AirTransport {
                 + weight + "t., number of passengers = " + passengersNumbers + ", business class availability = "
                 + hasBusinessClass + ", power in kW = " + calculatePowerINKiloWatts() + "kW]";
     }
-
 
 }
