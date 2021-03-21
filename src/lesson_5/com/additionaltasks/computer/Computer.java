@@ -28,9 +28,11 @@ public class Computer {
     public void printDescription () {
         if (isBurned){
             System.out.println("You have no computer anymore!");
-        } else{
+        } else if (isWorking){
         System.out.println("Computer configuration [processor: " + PROCESSOR + ", RAM: " + RAM + ", HDD: "
                 + HDD + ", cycles-to-failure: " + cyclesToFailure + "]");
+        } else if (!isWorking) {
+            System.out.println("Tip: You must turn computer first!");
         }
     }
 
