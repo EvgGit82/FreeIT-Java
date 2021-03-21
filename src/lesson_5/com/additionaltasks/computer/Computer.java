@@ -68,8 +68,12 @@ public class Computer {
     }
 
     private int throwCoin (){
-        System.out.println("Select a number: 1 or 0");
-        return getNumberFromScanner();
+        int numberFromUser = 2;
+        while (numberFromUser != 1 && numberFromUser != 0){
+            System.out.println("Select a number: 1 or 0");
+            numberFromUser = getNumberFromScanner();
+        }
+        return numberFromUser;
     }
 
      public int getNumberFromScanner() {

@@ -39,9 +39,15 @@ public class Runner {
         System.out.println("2. Turn computer ON");
         System.out.println("3. Turn computer OFF");
         System.out.println("0. Quit");
-        System.out.println("Select your option: ");
 
-        switch (computer.getNumberFromScanner()) {
+        int option = 5;
+
+        while (option != 1 && option != 2 && option != 3 && option !=0 ) {
+            System.out.println("Select your option: ");
+            option = computer.getNumberFromScanner();
+        }
+
+        switch (option) {
             case 1 -> computer.printDescription();
             case 2 -> computer.turnOn();
             case 3 -> computer.turnOff();
