@@ -29,7 +29,7 @@ public class PassengerLandTransport extends LandTransport {
     @Override
     public String toString() {
         return "Passenger Land Transport [" + super.toString() + "passengers capacity = " + passengersNumber + " passengers, power in kW = "
-                + calculatePowerINKiloWatts() + "kW]";
+                + calculatePowerInKW() + "kW]";
     }
 }
 

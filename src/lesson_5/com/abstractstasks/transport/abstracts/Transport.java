@@ -16,7 +16,7 @@ public abstract class Transport {
         this.model = model;
     }
 
-    protected double calculatePowerINKiloWatts (){
+    protected double calculatePowerInKW(){
         return power*0.74;
     }
 

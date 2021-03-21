@@ -23,6 +23,6 @@ public class CivilAirPlane extends AirTransport {
     public String toString() {
         return "Passenger Plane [" + super.toString() + "passenger capacity = " + passengersNumbers
                 + " passengers, business class availability = " + hasBusinessClass + ", power in kW = "
-                + calculatePowerINKiloWatts() + "kW]";
+                + calculatePowerInKW() + "kW]";
     }
 }

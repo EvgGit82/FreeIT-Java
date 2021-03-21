@@ -21,6 +21,6 @@ public class CargoLandTransport extends LandTransport {
     @Override
     public String toString() {
         return "Cargo Land Transport [" + super.toString() + "capacity = " + capacity + "t., power in kW = "
-                + calculatePowerINKiloWatts() + "kW]";
+                + calculatePowerInKW() + "kW]";
     }
 }
