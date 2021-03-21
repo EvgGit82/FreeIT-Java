@@ -4,8 +4,8 @@ import lesson_5.com.abstractstasks.transport.enums.Model;
 
 public class AirTransport extends Transport {
 
-    protected double wingSpan;
-    protected int minimumTakeOffStripLength;
+    protected final double wingSpan;
+    protected final int minimumTakeOffStripLength;
 
     public AirTransport(double power, double maximumSpeed, double weight, Model model,
                         int wingSpan, int minimumTakeOffStripLength) {
@@ -16,7 +16,7 @@ public class AirTransport extends Transport {
 
     @Override
     public String toString() {
-        return super.toString() + ", wing span = " + wingSpan + ", minimum take-off strip length = "
-                + minimumTakeOffStripLength;
+        return super.toString() + "wing span = " + wingSpan + "m, minimum take-off strip length = "
+                + minimumTakeOffStripLength + "m, ";
     }
 }

@@ -4,10 +4,10 @@ import lesson_5.com.abstractstasks.transport.enums.Model;
 
 public abstract class Transport {
 
-    protected double power;
-    protected double maximumSpeed;
-    protected double weight;
-    protected Model model;
+    protected final double power;
+    protected final double maximumSpeed;
+    protected final double weight;
+    protected final Model model;
 
     public Transport(double power, double maximumSpeed, double weight, Model model) {
         this.power = power;
@@ -22,6 +22,6 @@ public abstract class Transport {
 
     @Override
     public String toString() {
-        return "model = " + model + ", power = " + power + ", maximum speed = " + maximumSpeed + ", weight = " + weight;
+        return "model = " + model + ", power = " + power + "h.p., maximum speed = " + maximumSpeed + "km/h, weight = " + weight + "kg., ";
     }
 }

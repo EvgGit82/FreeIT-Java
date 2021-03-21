@@ -7,7 +7,7 @@ import java.text.DecimalFormat;
 
 public class PassengerLandTransport extends LandTransport {
 
-    private int passengersNumber;
+    private final int passengersNumber;
 
     public PassengerLandTransport(double power, double maximumSpeed, double weight, Model model,
                                   int numberOfWheels, double fuelConsumption, int passengersNumber) {
@@ -28,7 +28,7 @@ public class PassengerLandTransport extends LandTransport {
 
     @Override
     public String toString() {
-        return "Passenger Land Transport [" + super.toString() + ", passengers capacity = " + passengersNumber + " passengers, power in kW = "
+        return "Passenger Land Transport [" + super.toString() + "passengers capacity = " + passengersNumber + " passengers, power in kW = "
                 + calculatePowerINKiloWatts() + "kW]";
     }
 }

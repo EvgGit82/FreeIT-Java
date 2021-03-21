@@ -5,7 +5,7 @@ import lesson_5.com.abstractstasks.transport.enums.Model;
 
 public class CargoLandTransport extends LandTransport {
 
-    private double capacity;
+    private final double capacity;
 
     public CargoLandTransport(double power, double maximumSpeed, double weight, Model model,
                               int numberOfWheels, double fuelConsumption, double capacity) {
@@ -20,7 +20,7 @@ public class CargoLandTransport extends LandTransport {
 
     @Override
     public String toString() {
-        return "Cargo Land Transport [" + super.toString() + ", capacity = " + capacity + "t., power in kW = "
+        return "Cargo Land Transport [" + super.toString() + "capacity = " + capacity + "t., power in kW = "
                 + calculatePowerINKiloWatts() + "kW]";
     }
 }

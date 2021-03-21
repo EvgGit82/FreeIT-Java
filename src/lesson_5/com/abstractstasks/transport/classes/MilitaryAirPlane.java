@@ -5,7 +5,7 @@ import lesson_5.com.abstractstasks.transport.enums.Model;
 
 public class MilitaryAirPlane extends AirTransport {
 
-    private boolean hasEscapeSystem;
+    private final boolean hasEscapeSystem;
     private int numberOfMissiles;
 
     public MilitaryAirPlane(double power, double maximumSpeed, double weight, Model model, int wingSpan,
@@ -25,7 +25,7 @@ public class MilitaryAirPlane extends AirTransport {
 
     @Override
     public String toString() {
-        return "Military Plane [" + super.toString() + ", escape system availability = " + hasEscapeSystem + ", number of missiles = "
+        return "Military Plane [" + super.toString() + "escape system availability = " + hasEscapeSystem + ", number of missiles = "
                 + numberOfMissiles + ", power in kW = " + calculatePowerINKiloWatts() + "kW]";
     }
 
