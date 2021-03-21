@@ -68,9 +68,16 @@ public class Computer {
     }
 
     private int throwCoin (){
-        Scanner scn = new Scanner(System.in);
         System.out.println("Select a number: 1 or 0");
-        return Integer.parseInt(scn.nextLine().trim());
+        return getNumberFromScanner();
     }
 
+     public int getNumberFromScanner() {
+        Scanner scanner = new Scanner(System.in);
+        int number = -1;
+        try { number = Integer.parseInt(scanner.nextLine().trim());
+        } catch (NumberFormatException e){
+            System.out.println("Wrong number!"); }
+        return number;
+    }
 }

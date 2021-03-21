@@ -1,7 +1,5 @@
 package lesson_5.com.additionaltasks.computer;
 
-import java.util.Scanner;
-
 /*
 Создать класс компьютер.
 Поля:
@@ -35,7 +33,6 @@ public class Runner {
     }
 
     public static void showMenu () throws Throwable {
-        Scanner scn = new Scanner(System.in);
 
         System.out.println("Menu");
         System.out.println("1. Display configuration");
@@ -44,9 +41,7 @@ public class Runner {
         System.out.println("0. Quit");
         System.out.println("Select your option: ");
 
-        int option = Integer.parseInt(scn.nextLine().trim());
-
-        switch (option) {
+        switch (computer.getNumberFromScanner()) {
             case 1 -> computer.printDescription();
             case 2 -> computer.turnOn();
             case 3 -> computer.turnOff();

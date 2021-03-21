@@ -5,7 +5,6 @@ package lesson_5.com.maintasks.Task27;
 */
 
 import lesson_5.com.maintasks.Task27.abstracts.BankCard;
-import lesson_5.com.maintasks.Task27.abstracts.Date;
 import lesson_5.com.maintasks.Task27.enums.CardBrand;
 import lesson_5.com.maintasks.Task27.enums.Currency;
 
@@ -13,11 +12,11 @@ public class Runner {
     public static void main(String[] args) {
 
         BankCard card1 = new GiftCard(CardBrand.MASTERCARD, "2222 0011 0011 1234", Currency.BYN,
-                new Date(5, 22), 300.00);
+                new BankCard.Date(5, 22), 300.00);
         BankCard card2 = new CreditCard(CardBrand.VISA_GOLD, "Ivan Ivanov", "1245 0011 0011 4599",
-                Currency.EUR, new Date(11, 23), 500.00);
+                Currency.EUR, new BankCard.Date(11, 23), 500.00);
         BankCard card3 = new DebitCard(CardBrand.VISA_CLASSIC, "Roman Kashenok", "9788 0011 0111 5461",
-                Currency.USD, new Date(9, 24), 800);
+                Currency.USD, new BankCard.Date(9, 24), 800);
 
         System.out.println("For Gift Cards: ");
         System.out.println(card1.toString());

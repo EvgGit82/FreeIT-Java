@@ -46,4 +46,23 @@ public abstract class BankCard {
         return "BankCard [Type: " + CARD_TYPE + ", Name: " + CARD_BRAND + ", Card Number: " + CARD_NUMBER
                 + ", Currency: " + CURRENCY + ", Expiration Date: " + DATE + ", Amount: " + df.format(cardAmount) + ']';
     }
+
+   public static class Date {
+        private final int MONTH;
+        private final int YEAR;
+
+        public Date(int MONTH, int YEAR) {
+            this.MONTH = MONTH;
+            this.YEAR = YEAR;
+        }
+
+        @Override
+        public String toString() {
+            if (MONTH < 10) {
+                return "0" + MONTH + "/" + YEAR;
+            } else {
+                return MONTH + "/" + YEAR;
+            }
+        }
+    }
 }

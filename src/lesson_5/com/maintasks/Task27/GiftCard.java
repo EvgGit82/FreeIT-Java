@@ -1,7 +1,6 @@
 package lesson_5.com.maintasks.Task27;
 
 
-import lesson_5.com.maintasks.Task27.abstracts.Date;
 import lesson_5.com.maintasks.Task27.abstracts.GiftCards;
 import lesson_5.com.maintasks.Task27.enums.CardBrand;
 import lesson_5.com.maintasks.Task27.enums.Currency;
