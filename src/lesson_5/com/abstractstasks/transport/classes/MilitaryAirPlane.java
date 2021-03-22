@@ -2,7 +2,9 @@ package lesson_5.com.abstractstasks.transport.classes;
 
 import lesson_5.com.abstractstasks.transport.abstracts.AirTransport;
 import lesson_5.com.abstractstasks.transport.enums.Model;
+import lombok.Getter;
 
+@Getter
 public class MilitaryAirPlane extends AirTransport {
 
     private final boolean hasEscapeSystem;
@@ -12,6 +14,10 @@ public class MilitaryAirPlane extends AirTransport {
                             int minimumTakeOffStripLength, boolean hasEscapeSystem, int numberOfMissiles) {
         super(power, maximumSpeed, weight, model, wingSpan, minimumTakeOffStripLength);
         this.hasEscapeSystem = hasEscapeSystem;
+        this.numberOfMissiles = numberOfMissiles;
+    }
+
+    public void setNumberOfMissiles(int numberOfMissiles) {
         this.numberOfMissiles = numberOfMissiles;
     }
 

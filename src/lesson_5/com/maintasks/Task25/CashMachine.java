@@ -1,7 +1,10 @@
 package lesson_5.com.maintasks.Task25;
 
+import lombok.Data;
+
 import java.util.Scanner;
 
+@Data
 public class CashMachine {
 
     private int twenties;

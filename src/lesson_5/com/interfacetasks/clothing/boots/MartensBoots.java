@@ -1,5 +1,6 @@
 package lesson_5.com.interfacetasks.clothing.boots;
 
+
 public class MartensBoots implements IBoots {
 
     @Override

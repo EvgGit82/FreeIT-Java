@@ -1,8 +1,7 @@
 package lesson_5.com.interfacetasks.clothing.boots;
 
-public class GrensonBoots implements IBoots{
 
-    String name;
+public class GrensonBoots implements IBoots{
 
     @Override
     public String putOn() {

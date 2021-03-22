@@ -1,5 +1,8 @@
 package lesson_5.com.interfacetasks.robot.legs;
 
+import lombok.Data;
+
+@Data
 public class SamsungLeg implements ILeg{
 
     private int price;

@@ -1,5 +1,8 @@
 package lesson_5.com.interfacetasks.robot.heads;
 
+import lombok.Data;
+
+@Data
 public class SonyHead implements IHead {
 
     private int price;

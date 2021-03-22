@@ -1,5 +1,8 @@
 package lesson_5.com.interfacetasks.robot.hands;
 
+import lombok.Data;
+
+@Data
 public class ToshibaHand implements IHand{
 
     private int price;

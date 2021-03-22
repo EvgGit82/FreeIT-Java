@@ -1,7 +1,10 @@
 package lesson_5.com.interfacetasks.spaceport;
 
+import lombok.Data;
+
 import java.util.Random;
 
+@Data
 public class SpaceX implements IStart {
 
     private String name;

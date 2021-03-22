@@ -1,8 +1,11 @@
 package lesson_5.com.additionaltasks.computer;
 
+import lombok.Getter;
+
 import java.util.Random;
 import java.util.Scanner;
 
+@Getter
 public class Computer {
 
     private final String PROCESSOR;
@@ -18,6 +21,10 @@ public class Computer {
         this.PROCESSOR = processor;
         this.RAM = RAM;
         this.HDD = HDD;
+        this.cyclesToFailure = cyclesToFailure;
+    }
+
+    public void setCyclesToFailure(int cyclesToFailure) {
         this.cyclesToFailure = cyclesToFailure;
     }
 

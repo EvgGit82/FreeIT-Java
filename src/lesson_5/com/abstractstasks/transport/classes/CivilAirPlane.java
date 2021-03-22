@@ -2,7 +2,9 @@ package lesson_5.com.abstractstasks.transport.classes;
 
 import lesson_5.com.abstractstasks.transport.abstracts.AirTransport;
 import lesson_5.com.abstractstasks.transport.enums.Model;
+import lombok.Getter;
 
+@Getter
 public class CivilAirPlane extends AirTransport {
 
     private final int passengersNumbers;

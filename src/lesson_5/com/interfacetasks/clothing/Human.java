@@ -3,7 +3,9 @@ package lesson_5.com.interfacetasks.clothing;
 import lesson_5.com.interfacetasks.clothing.boots.IBoots;
 import lesson_5.com.interfacetasks.clothing.jacket.IJacket;
 import lesson_5.com.interfacetasks.clothing.shorts.IShorts;
+import lombok.Data;
 
+@Data
 public class Human implements IHuman{
 
     private String name;

@@ -1,5 +1,8 @@
 package lesson_5.com.interfacetasks.robot.hands;
 
+import lombok.Data;
+
+@Data
 public class SamsungHand implements IHand {
 
     private int price;

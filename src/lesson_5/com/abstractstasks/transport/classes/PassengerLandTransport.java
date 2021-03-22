@@ -2,9 +2,11 @@ package lesson_5.com.abstractstasks.transport.classes;
 
 import lesson_5.com.abstractstasks.transport.abstracts.LandTransport;
 import lesson_5.com.abstractstasks.transport.enums.Model;
+import lombok.Getter;
 
 import java.text.DecimalFormat;
 
+@Getter
 public class PassengerLandTransport extends LandTransport {
 
     private final int passengersNumber;

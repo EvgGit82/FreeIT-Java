@@ -28,6 +28,5 @@ public class SpacePortRunner {
             System.out.println();
             Thread.sleep(2000);
         }
-
     }
 }

@@ -1,5 +1,6 @@
 package lesson_5.com.interfacetasks.clothing.jacket;
 
+
 public class DieselJacket implements IJacket {
 
     @Override

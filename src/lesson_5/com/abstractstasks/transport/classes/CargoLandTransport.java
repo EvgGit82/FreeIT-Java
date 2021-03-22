@@ -2,7 +2,9 @@ package lesson_5.com.abstractstasks.transport.classes;
 
 import lesson_5.com.abstractstasks.transport.abstracts.LandTransport;
 import lesson_5.com.abstractstasks.transport.enums.Model;
+import lombok.Getter;
 
+@Getter
 public class CargoLandTransport extends LandTransport {
 
     private final double capacity;
@@ -16,7 +18,6 @@ public class CargoLandTransport extends LandTransport {
     public String freeSpaceAvailability(double cargoToBeLoaded) {
         return (capacity - cargoToBeLoaded) >= 0 ? "The truck is loaded." : "You need a larger truck.";
     }
-
 
     @Override
     public String toString() {

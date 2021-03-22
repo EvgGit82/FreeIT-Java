@@ -1,5 +1,8 @@
 package lesson_5.com.interfacetasks.robot.legs;
 
+import lombok.Data;
+
+@Data
 public class SonyLeg implements ILeg {
 
     private int price;

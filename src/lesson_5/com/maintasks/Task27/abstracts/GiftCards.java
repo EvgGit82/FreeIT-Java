@@ -1,6 +1,5 @@
 package lesson_5.com.maintasks.Task27.abstracts;
 
-
 import lesson_5.com.maintasks.Task27.enums.CardBrand;
 import lesson_5.com.maintasks.Task27.enums.CardType;
 import lesson_5.com.maintasks.Task27.enums.Currency;

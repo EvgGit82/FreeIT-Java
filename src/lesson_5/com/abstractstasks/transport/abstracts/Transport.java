@@ -1,7 +1,9 @@
 package lesson_5.com.abstractstasks.transport.abstracts;
 
 import lesson_5.com.abstractstasks.transport.enums.Model;
+import lombok.Getter;
 
+@Getter
 public abstract class Transport {
 
     protected final double power;
