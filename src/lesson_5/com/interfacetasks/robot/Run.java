@@ -31,6 +31,11 @@ public class Run {
             System.out.printf("This robot's total cost makes $%d \n", robot.getPrice());
             System.out.println();
         }
+
+        int maxPrice = Math.max(robotsList.get(0).getPrice(),
+                Math.max(robotsList.get(1).getPrice(), robotsList.get(2).getPrice()));
+
+        System.out.println("The most expensive robot costs: " + maxPrice);
     }
 }
 
