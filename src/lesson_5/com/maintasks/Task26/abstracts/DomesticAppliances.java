@@ -6,10 +6,6 @@ public abstract class DomesticAppliances implements IPLug {
 
     protected String name;
 
-    public DomesticAppliances(String name) {
-        this.name = name;
-    }
-
     public void plugInMains(){
         System.out.println(name + " is now plugged into the mains.");
     }

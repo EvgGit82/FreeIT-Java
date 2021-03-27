@@ -4,15 +4,11 @@ import lesson_5.com.maintasks.Task26.interfaces.IStarter;
 
 public abstract class Ovens extends DomesticAppliances implements IStarter {
 
-    public Ovens(String name) {
-        super(name);
-    }
-
     public void switchOn (){
         System.out.println(name + " is now switched on.");
     }
 
-    public void switchedOff (){
+    public void switchOff(){
         System.out.println(name + " is now switched off.");
     }
 

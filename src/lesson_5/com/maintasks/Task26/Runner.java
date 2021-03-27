@@ -9,20 +9,19 @@ import lesson_5.com.maintasks.Task26.classes.Toaster;
 часть из них включить в розетку. Иерархия должна иметь хотя бы три уровня.
 */
 
-
 public class Runner {
     public static void main(String[] args) {
 
-        Toaster toaster = new Toaster("Toaster");
-        Refrigerator refrigerator = new Refrigerator("Fridge");
-        MicrowaveOven microwaveOven = new MicrowaveOven("Microwave");
+        Toaster toaster = new Toaster();
+        Refrigerator refrigerator = new Refrigerator();
+        MicrowaveOven microwaveOven = new MicrowaveOven();
 
         toaster.plugInMains();
         toaster.loadBread();
         toaster.switchOn();
         toaster.setTemperature();
         toaster.pressStart();
-        toaster.switchedOff();
+        toaster.switchOff();
         toaster.unplugFromMains();
 
         System.out.println();

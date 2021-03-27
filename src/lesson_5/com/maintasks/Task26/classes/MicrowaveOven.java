@@ -4,8 +4,8 @@ import lesson_5.com.maintasks.Task26.abstracts.Ovens;
 
 public class MicrowaveOven extends Ovens {
 
-    public MicrowaveOven(String name) {
-        super(name);
+    public MicrowaveOven() {
+        name = "Microwave";
     }
 
     public void selectMode () {
