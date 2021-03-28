@@ -1,5 +1,7 @@
 package lesson_5.com.interfacetasks.spaceport;
 
+import lesson_5.com.interfacetasks.spaceport.commands.FillSpaceshipsList;
+import lesson_5.com.interfacetasks.spaceport.commands.LaunchShipsFromList;
 import lesson_5.com.interfacetasks.spaceport.spaceships.*;
 
 import java.util.ArrayList;
@@ -34,33 +36,16 @@ import java.util.List;
 */
 
 public class SpacePortRunner {
+
     public static void main(String[] args) throws InterruptedException {
 
         SpacePort spacePort = new SpacePort();
 
-        List<IStart> spaceships = new ArrayList<>(){{
-            add(new Shuttle("Discovery"));
-            add(new Shuttle("Columbia"));
-            add(new Soyuz("TMA"));
-            add(new Progress("M1"));
-            add(new Shuttle("Challenger"));
-            add(new SpaceX("GO Ms. Tree"));
-            add(new Soyuz("TMA-M"));
-            add(new SpaceX("GO Ms. Chief"));
-            add(new Shuttle("Atlantis"));
-            add(new SpaceX("GO Searcher"));
-            add(new Soyuz("MC"));
-            add(new Shuttle("Endeavour"));
-            add(new Progress("M-M"));
-            add(new SpaceX("GO Navigator"));
-            add(new SpaceX("GO Quest"));
-            add(new Progress("MC"));
-        }};
+        List<IStart> spaceships = new ArrayList<>();
 
-        for (IStart spaceship : spaceships) {
-            spacePort.start(spaceship);
-            System.out.println();
-            Thread.sleep(2000);
-        }
+        new FillSpaceshipsList(spaceships).Execute();
+
+        new LaunchShipsFromList(spaceships, spacePort).Execute();
+
     }
 }
