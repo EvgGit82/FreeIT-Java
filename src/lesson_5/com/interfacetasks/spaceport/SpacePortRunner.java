@@ -1,5 +1,7 @@
 package lesson_5.com.interfacetasks.spaceport;
 
+import lesson_5.com.interfacetasks.spaceport.spaceships.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,15 +42,21 @@ public class SpacePortRunner {
             add(new Shuttle("Discovery"));
             add(new SpaceX("Of Course I Still Love You"));
             add(new Shuttle("Columbia"));
+            add(new Soyuz("TMA"));
             add(new SpaceX("Just Read the Instructions"));
+            add(new Progress("M1"));
             add(new Shuttle("Challenger"));
             add(new SpaceX("GO Ms. Tree"));
+            add(new Soyuz("TMA-M"));
             add(new SpaceX("GO Ms. Chief"));
             add(new Shuttle("Atlantis"));
             add(new SpaceX("GO Searcher"));
+            add(new Soyuz("MC"));
             add(new Shuttle("Endeavour"));
+            add(new Progress("M-M"));
             add(new SpaceX("GO Navigator"));
             add(new SpaceX("GO Quest"));
+            add(new Progress("MC"));
         }};
 
         for (IStart spaceship : spaceships) {

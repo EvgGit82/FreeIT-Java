@@ -1,4 +1,4 @@
-package lesson_5.com.interfacetasks.spaceport;
+package lesson_5.com.interfacetasks.spaceport.spaceships;
 
 public interface IStart {
 

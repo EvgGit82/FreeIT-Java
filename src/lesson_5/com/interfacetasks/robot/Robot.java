@@ -22,7 +22,7 @@ public class Robot implements IRobot {
 
     @Override
     public void action() {
-        System.out.println("Robot '" + name + "'");
+        System.out.printf("Robot '%s'\n", name);
         head.speak();
         hand.upHand();
         leg.step();

@@ -1,15 +1,12 @@
-package lesson_5.com.interfacetasks.spaceport;
-
-import lombok.Data;
+package lesson_5.com.interfacetasks.spaceport.spaceships;
 
 import java.util.Random;
 
-@Data
-public class SpaceX implements IStart {
+public class Progress implements IStart{
 
     private String name;
 
-    public SpaceX(String name) {
+    public Progress (String name) {
         this.name = name;
     }
 
@@ -20,11 +17,12 @@ public class SpaceX implements IStart {
 
     @Override
     public void enginesStart() {
-        System.out.println("SpaceX \'" + name + "\' engines ON! All systems online!");
+        System.out.println("Progress \'" + name + "\' engines ON! All systems online!");
     }
 
     @Override
     public void start() {
-        System.out.println("SpaceX \'" + name + "\' launched!");
+        System.out.println("Progress \'" + name + "\' launched!");
     }
+
 }
