@@ -17,11 +17,6 @@ public class SamsungLeg implements ILeg{
     }
 
     @Override
-    public int getPrice() {
-        return price;
-    }
-
-    @Override
     public String toString() {
         return "Samsung Leg (price = " + price + ")";
     }

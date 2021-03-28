@@ -4,13 +4,13 @@ import lesson_5.com.additionaltasks.computer.Computer;
 
 public class ShowMenu {
 
-    Computer computer;
+    private Computer computer;
 
     public ShowMenu(Computer computer) {
         this.computer = computer;
     }
 
-    public void Execute () throws Throwable {
+    public void execute() throws Throwable {
 
         System.out.println("Menu");
         System.out.println("1. Display configuration");
@@ -22,7 +22,7 @@ public class ShowMenu {
 
         while (option != 1 && option != 2 && option != 3 && option !=0 ) {
             System.out.println("Select your option: ");
-            option = new GetNumberFromScanner().Execute();
+            option = new GetNumberFromScanner().execute();
         }
 
         switch (option) {

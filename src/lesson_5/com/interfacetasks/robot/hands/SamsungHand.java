@@ -17,11 +17,6 @@ public class SamsungHand implements IHand {
     }
 
     @Override
-    public int getPrice() {
-        return price;
-    }
-
-    @Override
     public String toString() {
         return "Samsung Hand (price = " + price + ")";
     }

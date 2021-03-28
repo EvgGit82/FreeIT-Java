@@ -1,7 +1,6 @@
 package lesson_5.com.interfacetasks.spaceport;
 
 import lesson_5.com.interfacetasks.spaceport.commands.FillSpaceshipsList;
-import lesson_5.com.interfacetasks.spaceport.commands.ICommand;
 import lesson_5.com.interfacetasks.spaceport.commands.LaunchShipsFromList;
 import lesson_5.com.interfacetasks.spaceport.spaceships.*;
 
@@ -44,9 +43,9 @@ public class SpaceportRunner {
 
         List<IStart> spaceshipsList = new ArrayList<>();
 
-        new FillSpaceshipsList(spaceshipsList).Execute();
+        new FillSpaceshipsList(spaceshipsList).execute();
 
-        new LaunchShipsFromList(spaceshipsList, spaceport).Execute();
+        new LaunchShipsFromList(spaceshipsList, spaceport).execute();
 
     }
 }

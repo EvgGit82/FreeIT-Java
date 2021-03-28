@@ -17,11 +17,6 @@ public class SonyHand implements IHand {
     }
 
     @Override
-    public int getPrice() {
-        return price;
-    }
-
-    @Override
     public String toString() {
         return "Sony Hand (price = " + price + ")";
     }

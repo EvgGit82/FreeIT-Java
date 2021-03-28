@@ -39,7 +39,7 @@ public class Computer {
 
     public void turnOn() {
         if (!isWorking && !isBurned) {
-            if (new ThrowCoin().Execute()) {
+            if (new ThrowCoin().execute()) {
                 System.out.println("Computer successfully turned on");
                 isWorking = true;
             } else {
@@ -55,7 +55,7 @@ public class Computer {
 
     public void turnOff() {
         if (isWorking) {
-            if (new ThrowCoin().Execute()) {
+            if (new ThrowCoin().execute()) {
                 System.out.println("Computer is now turned off");
                 isWorking = false;
                 cyclesToFailure--;

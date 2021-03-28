@@ -15,7 +15,7 @@ public class LaunchShipsFromList implements ICommand {
         this.spacePort = spacePort;
     }
 
-    public void Execute() throws InterruptedException {
+    public void execute() throws InterruptedException {
         for (IStart spaceship : sourceShipsList) {
             spacePort.start(spaceship);
             System.out.println();

@@ -13,7 +13,7 @@ public class FillSpaceshipsList implements ICommand {
     }
 
 
-    public void Execute() {
+    public void execute() {
         sourceList.add(new Shuttle("Discovery"));
         sourceList.add(new Shuttle("Columbia"));
         sourceList.add(new Soyuz("TMA"));

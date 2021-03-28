@@ -17,11 +17,6 @@ public class ToshibaHand implements IHand{
     }
 
     @Override
-    public int getPrice() {
-        return price;
-    }
-
-    @Override
     public String toString() {
         return "Toshiba Hand (price = " + price + ")";
     }

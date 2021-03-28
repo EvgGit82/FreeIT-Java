@@ -17,11 +17,6 @@ public class SamsungHead implements IHead {
     }
 
     @Override
-    public int getPrice() {
-        return price;
-    }
-
-    @Override
     public String toString() {
         return "Samsung Head (price = " + price + ")";
     }

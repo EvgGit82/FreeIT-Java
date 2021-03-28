@@ -26,7 +26,7 @@ public class Runner {
     public static void main(String[] args) throws Throwable {
 
         while (computer.getCyclesToFailure() > 0) {
-            new ShowMenu(computer).Execute();
+            new ShowMenu(computer).execute();
             System.out.println();
         }
 

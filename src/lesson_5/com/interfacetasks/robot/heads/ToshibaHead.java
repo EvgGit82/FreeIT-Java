@@ -16,11 +16,6 @@ public class ToshibaHead implements IHead {
         System.out.println("Toshiba head speaks.");
     }
 
-    @Override
-    public int getPrice() {
-        return price;
-    }
-
     public String toString() {
         return "Toshiba Head (price = " + price + ")";
     }
