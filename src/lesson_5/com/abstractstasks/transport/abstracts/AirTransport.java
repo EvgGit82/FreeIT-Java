@@ -4,7 +4,7 @@ import lesson_5.com.abstractstasks.transport.enums.Model;
 import lombok.Getter;
 
 @Getter
-public class AirTransport extends Transport {
+public abstract class AirTransport extends Transport {
 
     protected final double wingSpan;
     protected final int minimumTakeOffStripLength;
