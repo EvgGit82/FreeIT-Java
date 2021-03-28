@@ -20,9 +20,9 @@ public class Run {
     public static void main(String[] args) {
 
         List<Robot> robotsList = new ArrayList<>(){{
-            add(new Robot(new SonyHead(), new SamsungHand(), new ToshibaLeg()));
-            add(new Robot(new SamsungHead(), new ToshibaHand(), new SonyLeg()));
-            add(new Robot(new ToshibaHead(), new SonyHand(), new SamsungLeg()));
+            add(new Robot("C3PO", new SonyHead(), new SamsungHand(), new ToshibaLeg()));
+            add(new Robot("R2D2", new SamsungHead(), new ToshibaHand(), new SonyLeg()));
+            add(new Robot("BB8", new ToshibaHead(), new SonyHand(), new SamsungLeg()));
         }};
 
         for (Robot robot : robotsList) {
@@ -34,11 +34,10 @@ public class Run {
         int maxPrice = Math.max(robotsList.get(0).getPrice(),
                 Math.max(robotsList.get(1).getPrice(), robotsList.get(2).getPrice()));
 
-        System.out.println("The most expensive robot costs: " + maxPrice);
-
         for (Robot robot : robotsList) {
             if(robot.getPrice() == maxPrice){
-                System.out.println("And the most expensive robot is: " + robot.toString());
+                System.out.println("And the most expensive robot is: " + robot.toString()
+                        + " and it costs $" + maxPrice);
                 break;
             }
         }

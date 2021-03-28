@@ -11,8 +11,10 @@ public class Robot implements IRobot {
     private IHead head;
     private IHand hand;
     private ILeg leg;
+    private String name;
 
-    public Robot(IHead head, IHand hand, ILeg leg) {
+    public Robot(String name, IHead head, IHand hand, ILeg leg) {
+        this.name = name;
         this.head = head;
         this.hand = hand;
         this.leg = leg;
@@ -20,11 +22,11 @@ public class Robot implements IRobot {
 
     @Override
     public void action() {
+        System.out.println("Robot '" + name + "'");
         head.speak();
         hand.upHand();
         leg.step();
     }
-
 
     @Override
     public int getPrice() {
@@ -33,7 +35,7 @@ public class Robot implements IRobot {
 
     @Override
     public String toString() {
-        return "Robot [" + "head = " + head.toString() + ", hand = "
+        return "Robot '" + name + "' [head = " + head.toString() + ", hand = "
                 + hand.toString() + ", leg = " + leg.toString() + ']';
     }
 }
