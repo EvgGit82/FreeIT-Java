@@ -36,6 +36,13 @@ public class Run {
                 Math.max(robotsList.get(1).getPrice(), robotsList.get(2).getPrice()));
 
         System.out.println("The most expensive robot costs: " + maxPrice);
+
+        for (Robot robot : robotsList) {
+            if(robot.getPrice() == maxPrice){
+                System.out.println("And the most expensive robot is: " + robot.toString());
+                break;
+            }
+        }
     }
 }
 

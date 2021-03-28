@@ -58,5 +58,8 @@ public class Robot implements IRobot {
         return price;
     }
 
-
+    @Override
+    public String toString() {
+        return "Robot [" + "head = " + head + ", hand = " + hand + ", leg = " + leg + ']';
+    }
 }
