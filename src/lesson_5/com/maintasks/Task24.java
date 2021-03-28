@@ -67,13 +67,13 @@ class TimePeriod {
 
         int seconds1 = this.calculateTotalSeconds();
         int seconds2 = timePeriod.calculateTotalSeconds();
+        int result;
 
         if (seconds1 == seconds2) {
-            return 0;
-        } else if (seconds1 > seconds2) {
-            return 1;
+            result = 0;
         } else {
-            return -1;
+            result = seconds1 > seconds2 ? 1 : -1;
         }
+        return result;
     }
 }
