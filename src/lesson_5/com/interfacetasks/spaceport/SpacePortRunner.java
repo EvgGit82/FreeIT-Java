@@ -1,6 +1,7 @@
 package lesson_5.com.interfacetasks.spaceport;
 
 import lesson_5.com.interfacetasks.spaceport.commands.FillSpaceshipsList;
+import lesson_5.com.interfacetasks.spaceport.commands.ICommand;
 import lesson_5.com.interfacetasks.spaceport.commands.LaunchShipsFromList;
 import lesson_5.com.interfacetasks.spaceport.spaceships.*;
 
@@ -35,17 +36,17 @@ import java.util.List;
 
 */
 
-public class SpacePortRunner {
+public class SpaceportRunner {
 
     public static void main(String[] args) throws InterruptedException {
 
-        SpacePort spacePort = new SpacePort();
+        Spaceport spaceport = new Spaceport();
 
-        List<IStart> spaceships = new ArrayList<>();
+        List<IStart> spaceshipsList = new ArrayList<>();
 
-        new FillSpaceshipsList(spaceships).Execute();
+        new FillSpaceshipsList(spaceshipsList).Execute();
 
-        new LaunchShipsFromList(spaceships, spacePort).Execute();
+        new LaunchShipsFromList(spaceshipsList, spaceport).Execute();
 
     }
 }

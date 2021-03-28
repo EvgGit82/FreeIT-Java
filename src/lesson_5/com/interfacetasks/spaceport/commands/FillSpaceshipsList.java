@@ -4,7 +4,7 @@ import lesson_5.com.interfacetasks.spaceport.spaceships.*;
 
 import java.util.List;
 
-public class FillSpaceshipsList{
+public class FillSpaceshipsList implements ICommand {
 
     private List<IStart> sourceList;
 
@@ -13,7 +13,7 @@ public class FillSpaceshipsList{
     }
 
 
-    public List<IStart> Execute() {
+    public void Execute() {
         sourceList.add(new Shuttle("Discovery"));
         sourceList.add(new Shuttle("Columbia"));
         sourceList.add(new Soyuz("TMA"));
@@ -30,6 +30,5 @@ public class FillSpaceshipsList{
         sourceList.add(new SpaceX("GO Navigator"));
         sourceList.add(new SpaceX("GO Quest"));
         sourceList.add(new Progress("MC"));
-        return sourceList;
     }
 }

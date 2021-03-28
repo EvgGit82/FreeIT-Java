@@ -1,16 +1,16 @@
 package lesson_5.com.interfacetasks.spaceport.commands;
 
-import lesson_5.com.interfacetasks.spaceport.SpacePort;
+import lesson_5.com.interfacetasks.spaceport.Spaceport;
 import lesson_5.com.interfacetasks.spaceport.spaceships.IStart;
 
 import java.util.List;
 
-public class LaunchShipsFromList {
+public class LaunchShipsFromList implements ICommand {
 
     List<IStart> sourceShipsList;
-    SpacePort spacePort;
+    Spaceport spacePort;
 
-    public LaunchShipsFromList(List<IStart> sourceShipsList, SpacePort spacePort) {
+    public LaunchShipsFromList(List<IStart> sourceShipsList, Spaceport spacePort) {
         this.sourceShipsList = sourceShipsList;
         this.spacePort = spacePort;
     }
