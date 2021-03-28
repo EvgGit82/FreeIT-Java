@@ -133,11 +133,9 @@ public class CashMachine {
 
     private int getNumberFromScanner() {
         Scanner scanner = new Scanner(System.in);
-        int number = -1;
-        try { number = Integer.parseInt(scanner.nextLine().trim());
+        try { return Integer.parseInt(scanner.nextLine().trim());
         } catch (NumberFormatException e){
             System.out.println("Wrong number!"); }
-        return number;
+        return -1;
     }
-
 }
