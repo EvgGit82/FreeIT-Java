@@ -1,9 +1,9 @@
 package lesson_5.com.abstractstasks.transport;
 
-import lesson_5.com.abstractstasks.transport.classes.CargoLandTransport;
-import lesson_5.com.abstractstasks.transport.classes.CivilAirPlane;
-import lesson_5.com.abstractstasks.transport.classes.MilitaryAirPlane;
-import lesson_5.com.abstractstasks.transport.classes.PassengerLandTransport;
+import lesson_5.com.abstractstasks.transport.types.CargoLandTransport;
+import lesson_5.com.abstractstasks.transport.types.CivilAirPlane;
+import lesson_5.com.abstractstasks.transport.types.MilitaryAirPlane;
+import lesson_5.com.abstractstasks.transport.types.PassengerLandTransport;
 import lesson_5.com.abstractstasks.transport.enums.Model;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package lesson_5.com.abstractstasks.transport.classes;
+package lesson_5.com.abstractstasks.transport.types;
 
 import lesson_5.com.abstractstasks.transport.abstracts.LandTransport;
 import lesson_5.com.abstractstasks.transport.enums.Model;

@@ -1,5 +1,7 @@
 package lesson_5.com.additionaltasks.computer;
 
+import lesson_5.com.additionaltasks.computer.commands.ShowMenu;
+
 /*
 Создать класс компьютер.
 Поля:
@@ -24,35 +26,11 @@ public class Runner {
     public static void main(String[] args) throws Throwable {
 
         while (computer.getCyclesToFailure() > 0) {
-            showMenu();
+            new ShowMenu(computer).Execute();
             System.out.println();
         }
 
         computer.burnDown();
         System.exit(0);
     }
-
-    public static void showMenu () throws Throwable {
-
-        System.out.println("Menu");
-        System.out.println("1. Display configuration");
-        System.out.println("2. Turn computer ON");
-        System.out.println("3. Turn computer OFF");
-        System.out.println("0. Quit");
-
-        int option = 5;
-
-        while (option != 1 && option != 2 && option != 3 && option !=0 ) {
-            System.out.println("Select your option: ");
-            option = computer.getNumberFromScanner();
-        }
-
-        switch (option) {
-            case 1 -> computer.printDescription();
-            case 2 -> computer.turnOn();
-            case 3 -> computer.turnOff();
-            case 0 -> System.exit(0);
-        }
-    }
-
 }
