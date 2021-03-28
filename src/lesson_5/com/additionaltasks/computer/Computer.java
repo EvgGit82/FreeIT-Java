@@ -24,10 +24,6 @@ public class Computer {
         this.cyclesToFailure = cyclesToFailure;
     }
 
-    public void setCyclesToFailure(int cyclesToFailure) {
-        this.cyclesToFailure = cyclesToFailure;
-    }
-
     public int getCyclesToFailure() {
         return cyclesToFailure;
     }
@@ -38,12 +34,12 @@ public class Computer {
         } else if (isWorking){
         System.out.println("Computer configuration [processor: " + PROCESSOR + ", RAM: " + RAM + ", HDD: "
                 + HDD + ", cycles-to-failure: " + cyclesToFailure + "]");
-        } else if (!isWorking) {
+        } else {
             System.out.println("Tip: You must turn computer first!");
         }
     }
 
-    public void turnOn() throws Throwable {
+    public void turnOn() {
         if (!isWorking && !isBurned) {
             int coinFlip = new Random().nextInt(10)%2;
             if (coinFlip == throwCoin()) {
@@ -60,18 +56,23 @@ public class Computer {
         }
     }
 
-    public void turnOff(){
+    public void turnOff() {
         if (isWorking) {
+            int coinFlip = new Random().nextInt(10)%2;
+            if (coinFlip == throwCoin()) {
             System.out.println("Computer is now turned off");
             isWorking = false;
             cyclesToFailure--;
             System.out.println(cyclesToFailure + " cycles left.");
+            } else {
+                    burnDown();
+                }
         } else {
             System.out.println("Computer is not working now.");
         }
     }
 
-    public void burnDown () throws Throwable {
+    public void burnDown (){
         System.out.println("Computer burns down");
         isBurned = true;
     }

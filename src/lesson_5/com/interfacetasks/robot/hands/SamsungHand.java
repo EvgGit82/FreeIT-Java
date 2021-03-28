@@ -24,4 +24,5 @@ public class SamsungHand implements IHand {
     public int getPrice() {
         return price;
     }
+
 }
