@@ -15,6 +15,7 @@ public class SpaceX implements IStart {
 
     @Override
     public boolean preflightSystemsCheck() {
+        System.out.printf("SpaceX '%s' systems check...\n", name);
         return new Random().nextInt(10) > 3;
     }
 

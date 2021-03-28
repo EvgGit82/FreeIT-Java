@@ -12,6 +12,7 @@ public class Soyuz implements IStart{
 
     @Override
     public boolean preflightSystemsCheck() {
+        System.out.printf("Soyuz '%s' systems check...\n", name);
         return new Random().nextInt(10) > 3;
     }
 

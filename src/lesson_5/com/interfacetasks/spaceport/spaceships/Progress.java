@@ -12,6 +12,7 @@ public class Progress implements IStart{
 
     @Override
     public boolean preflightSystemsCheck() {
+        System.out.printf("Progress '%s' systems check...\n", name);
         return new Random().nextInt(10) > 3;
     }
 
