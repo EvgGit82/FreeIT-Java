@@ -12,7 +12,7 @@ public class SpacePort {
             Thread.sleep(500);
             for (int i = 10; i > 0; i--) {
                 System.out.println(i);
-                Thread.sleep(200);
+                Thread.sleep(150);
             }
             start.start();
         } else {

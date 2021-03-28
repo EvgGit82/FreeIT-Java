@@ -11,8 +11,9 @@ public class Progress implements IStart{
     }
 
     @Override
-    public boolean preflightSystemsCheck() {
+    public boolean preflightSystemsCheck() throws InterruptedException {
         System.out.printf("Progress '%s' systems check...\n", name);
+        Thread.sleep(800);
         return new Random().nextInt(10) > 3;
     }
 

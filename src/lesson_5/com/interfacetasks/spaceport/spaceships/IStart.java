@@ -2,7 +2,7 @@ package lesson_5.com.interfacetasks.spaceport.spaceships;
 
 public interface IStart {
 
-    boolean preflightSystemsCheck();
+    boolean preflightSystemsCheck() throws InterruptedException;
     void enginesStart();
     void start();
 
