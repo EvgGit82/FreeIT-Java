@@ -1,6 +1,5 @@
 package lesson_5.com.interfacetasks.clothing;
 
-
 /*
 Интерфейсы:
 - Куртка

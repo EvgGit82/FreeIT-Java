@@ -11,10 +11,6 @@ public class ToshibaHead implements IHead {
         this.price = 30;
     }
 
-    public ToshibaHead(int price) {
-        this.price = price;
-    }
-
     @Override
     public void speak() {
         System.out.println("Toshiba head speaks.");
@@ -23,5 +19,9 @@ public class ToshibaHead implements IHead {
     @Override
     public int getPrice() {
         return price;
+    }
+
+    public String toString() {
+        return "Toshiba Head (price = " + price + ")";
     }
 }

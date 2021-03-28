@@ -11,10 +11,6 @@ public class SamsungLeg implements ILeg{
         this.price = 5;
     }
 
-    public SamsungLeg(int price) {
-        this.price = price;
-    }
-
     @Override
     public void step() {
         System.out.println("Samsung leg steps.");
@@ -23,5 +19,10 @@ public class SamsungLeg implements ILeg{
     @Override
     public int getPrice() {
         return price;
+    }
+
+    @Override
+    public String toString() {
+        return "Samsung Leg (price = " + price + ")";
     }
 }

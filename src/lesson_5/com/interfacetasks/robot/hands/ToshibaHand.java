@@ -11,10 +11,6 @@ public class ToshibaHand implements IHand{
         this.price = 20;
     }
 
-    public ToshibaHand(int price) {
-        this.price = price;
-    }
-
     @Override
     public void upHand() {
         System.out.println("Toshiba hand up.");
@@ -24,4 +20,10 @@ public class ToshibaHand implements IHand{
     public int getPrice() {
         return price;
     }
+
+    @Override
+    public String toString() {
+        return "Toshiba Hand (price = " + price + ")";
+    }
+
 }

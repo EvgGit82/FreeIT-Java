@@ -1,6 +1,5 @@
 package lesson_5.com.maintasks.Task27;
 
-
 import lesson_5.com.maintasks.Task27.abstracts.PersonalAccountCards;
 import lesson_5.com.maintasks.Task27.enums.CardBrand;
 import lesson_5.com.maintasks.Task27.enums.CardType;
@@ -21,5 +20,4 @@ public class DebitCard extends PersonalAccountCards {
             cardAmount -= amount;
         }
     }
-
 }

@@ -15,11 +15,7 @@ public class Shuttle implements IStart {
 
     @Override
     public boolean preflightSystemsCheck() {
-        if (new Random().nextInt(10) >3 ){
-            return true;
-        } else {
-        return false;
-        }
+        return new Random().nextInt(10) > 3;
     }
 
     @Override
@@ -31,5 +27,4 @@ public class Shuttle implements IStart {
     public void start() {
         System.out.println("Shuttle \'" + name + "\' launched!");
     }
-
 }

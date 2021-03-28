@@ -23,5 +23,4 @@ public abstract class GiftCards extends BankCard {
             cardAmount -= amount;
         }
     }
-
 }

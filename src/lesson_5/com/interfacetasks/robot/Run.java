@@ -4,7 +4,6 @@ import lesson_5.com.interfacetasks.robot.hands.*;
 import lesson_5.com.interfacetasks.robot.heads.*;
 import lesson_5.com.interfacetasks.robot.legs.*;
 
-
 import java.util.ArrayList;
 import java.util.List;
 

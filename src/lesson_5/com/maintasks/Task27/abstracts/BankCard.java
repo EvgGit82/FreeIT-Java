@@ -1,16 +1,15 @@
 package lesson_5.com.maintasks.Task27.abstracts;
 
-
 import lesson_5.com.maintasks.Task27.enums.CardBrand;
 import lesson_5.com.maintasks.Task27.enums.CardType;
 import lesson_5.com.maintasks.Task27.enums.Currency;
-import lombok.Getter;
+import lombok.Data;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.Locale;
 
-@Getter
+@Data
 public abstract class BankCard {
 
     protected final CardBrand CARD_BRAND;
@@ -30,14 +29,6 @@ public abstract class BankCard {
         this.CURRENCY = CURRENCY;
         this.DATE = DATE;
         this.cardAmount = cardAmount;
-    }
-
-    public void setCardAmount(double cardAmount) {
-        this.cardAmount = cardAmount;
-    }
-
-    public void setCARD_TYPE(CardType CARD_TYPE) {
-        this.CARD_TYPE = CARD_TYPE;
     }
 
     public void depositCash(double amount) {

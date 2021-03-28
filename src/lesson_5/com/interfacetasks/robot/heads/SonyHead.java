@@ -11,10 +11,6 @@ public class SonyHead implements IHead {
         this.price = 25;
     }
 
-    public SonyHead(int price) {
-        this.price = price;
-    }
-
     @Override
     public void speak() {
         System.out.println("Sony head speaks.");
@@ -23,5 +19,10 @@ public class SonyHead implements IHead {
     @Override
     public int getPrice() {
         return price;
+    }
+
+    @Override
+    public String toString() {
+        return "Sony Head (price = " + price + ")";
     }
 }

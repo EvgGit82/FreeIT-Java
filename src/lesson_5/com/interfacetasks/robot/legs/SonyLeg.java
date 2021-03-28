@@ -11,10 +11,6 @@ public class SonyLeg implements ILeg {
         this.price = 7;
     }
 
-    public SonyLeg(int price) {
-        this.price = price;
-    }
-
     @Override
     public void step() {
         System.out.println("Sony leg steps");
@@ -23,6 +19,11 @@ public class SonyLeg implements ILeg {
     @Override
     public int getPrice() {
         return price;
+    }
+
+    @Override
+    public String toString() {
+        return "Sony Leg (price = " + price + ")";
     }
 }
 

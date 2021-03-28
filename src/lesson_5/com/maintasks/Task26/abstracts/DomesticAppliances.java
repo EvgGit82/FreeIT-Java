@@ -17,5 +17,4 @@ public abstract class DomesticAppliances implements IPLug {
     public void setTemperature () {
         System.out.println("For " + name.toLowerCase() + " the temperature has been set.");
     }
-
 }

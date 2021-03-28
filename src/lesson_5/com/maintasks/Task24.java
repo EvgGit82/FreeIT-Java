@@ -76,5 +76,4 @@ class TimePeriod {
             return -1;
         }
     }
-
 }

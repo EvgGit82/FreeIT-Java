@@ -23,5 +23,4 @@ public abstract class Ovens extends DomesticAppliances implements IStarter {
     public void setTemperature () {
         System.out.println("For " + name.toLowerCase() + " the heating temperature has been set.");
     }
-
 }
