@@ -22,10 +22,6 @@ public class Computer {
         this.cyclesToFailure = cyclesToFailure;
     }
 
-    public int getCyclesToFailure() {
-        return cyclesToFailure;
-    }
-
     public void printDescription () {
         if (isBurned){
             System.out.println("You have no computer anymore!");
