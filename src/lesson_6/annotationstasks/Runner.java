@@ -19,7 +19,7 @@ public class Runner {
 
     public static void main(String[] args) throws Exception {
 
-        new VersionAnnotationProcessor().process(MyService.class);
+        Annotations.run();
 
     }
 }
