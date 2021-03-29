@@ -2,11 +2,11 @@ package tictactoe;
 
 /*
 написать игру крестики нолики (двумерный массив размерностью 3х3).
-
 1. Не используя классы и методы - все в методе main
 2. Не используя утильные классы (Arrays и Math)
 3. Игра должна продолжаться до тех пор, пока не будет выявлен победитель
 (три "О" или три "Х" в ряд или по диагонали) или пока не закончатся свободные клетки...
+По возможности уложиться в ~100 строк
 */
 
 import java.util.Scanner;
@@ -18,7 +18,8 @@ public class TickTackToe {
     private static final String PLAYER_ONE = "Player 1";
     private static final String PLAYER_TWO = "Player 2";
     private static final String WIN_MESSAGE = "Game Over! %s wins!";
-
+    private static final char IKS = 'X';
+    private static final char ZERO = 'O';
 
     public static void main(String[] args) {
 
@@ -62,19 +63,18 @@ public class TickTackToe {
                 column--;
 
 
-                if ((player.equals(PLAYER_ONE)) && (gameField[row][column] != 'X') && (gameField[row][column] != 'O')) {
-                    gameField[row][column] = 'X';
+                if ((player.equals(PLAYER_ONE)) && (gameField[row][column] != IKS) && (gameField[row][column] != ZERO)) {
+                    gameField[row][column] = IKS;
                     player = PLAYER_TWO;
                     break;
-                } else if ((player.equals(PLAYER_TWO)) && (gameField[row][column] != 'X') && (gameField[row][column] != 'O')) {
-                    gameField[row][column] = 'O';
+                } else if ((player.equals(PLAYER_TWO)) && (gameField[row][column] != IKS) && (gameField[row][column] != ZERO)) {
+                    gameField[row][column] = ZERO;
                     player = PLAYER_ONE;
                     break;
                 } else {
                     System.out.println("Field occupied. Let's try again!");
                 }
             }
-
 
             boolean noEmptyLeft = true;
 
@@ -86,25 +86,24 @@ public class TickTackToe {
                 }
             }
 
-
-            if (((gameField[0][0] == 'X') && (gameField[0][1] == 'X') && (gameField[0][2] == 'X')) ||
-                    ((gameField[1][0] == 'X') && (gameField[1][1] == 'X') && (gameField[1][2] == 'X')) ||
-                    ((gameField[2][0] == 'X') && (gameField[2][1] == 'X') && (gameField[2][2] == 'X')) ||
-                    ((gameField[0][0] == 'X') && (gameField[1][0] == 'X') && (gameField[2][0] == 'X')) ||
-                    ((gameField[0][1] == 'X') && (gameField[1][1] == 'X') && (gameField[2][1] == 'X')) ||
-                    ((gameField[0][2] == 'X') && (gameField[1][2] == 'X') && (gameField[2][2] == 'X')) ||
-                    ((gameField[0][0] == 'X') && (gameField[1][1] == 'X') && (gameField[2][2] == 'X')) ||
-                    ((gameField[0][2] == 'X') && (gameField[1][1] == 'X') && (gameField[2][0] == 'X'))) {
+            if (((gameField[0][0] == IKS) && (gameField[0][1] == IKS) && (gameField[0][2] == IKS)) ||
+                    ((gameField[1][0] == IKS) && (gameField[1][1] == IKS) && (gameField[1][2] == IKS)) ||
+                    ((gameField[2][0] == IKS) && (gameField[2][1] == IKS) && (gameField[2][2] == IKS)) ||
+                    ((gameField[0][0] == IKS) && (gameField[1][0] == IKS) && (gameField[2][0] == IKS)) ||
+                    ((gameField[0][1] == IKS) && (gameField[1][1] == IKS) && (gameField[2][1] == IKS)) ||
+                    ((gameField[0][2] == IKS) && (gameField[1][2] == IKS) && (gameField[2][2] == IKS)) ||
+                    ((gameField[0][0] == IKS) && (gameField[1][1] == IKS) && (gameField[2][2] == IKS)) ||
+                    ((gameField[0][2] == IKS) && (gameField[1][1] == IKS) && (gameField[2][0] == IKS))) {
                 System.out.println(format(WIN_MESSAGE, PLAYER_ONE));
                 break;
-            } else if (((gameField[0][0] == 'O') && (gameField[0][1] == 'O') && (gameField[0][2] == 'O')) ||
-                    ((gameField[1][0] == 'O') && (gameField[1][1] == 'O') && (gameField[1][2] == 'O')) ||
-                    ((gameField[2][0] == 'O') && (gameField[2][1] == 'O') && (gameField[2][2] == 'O')) ||
-                    ((gameField[0][0] == 'O') && (gameField[1][0] == 'O') && (gameField[2][0] == 'O')) ||
-                    ((gameField[0][1] == 'O') && (gameField[1][1] == 'O') && (gameField[2][1] == 'O')) ||
-                    ((gameField[0][2] == 'O') && (gameField[1][2] == 'O') && (gameField[2][2] == 'O')) ||
-                    ((gameField[0][0] == 'O') && (gameField[1][1] == 'O') && (gameField[2][2] == 'O')) ||
-                    ((gameField[0][2] == 'O') && (gameField[1][1] == 'O') && (gameField[2][0] == 'O'))) {
+            } else if (((gameField[0][0] == ZERO) && (gameField[0][1] == ZERO) && (gameField[0][2] == ZERO)) ||
+                    ((gameField[1][0] == ZERO) && (gameField[1][1] == ZERO) && (gameField[1][2] == ZERO)) ||
+                    ((gameField[2][0] == ZERO) && (gameField[2][1] == ZERO) && (gameField[2][2] == ZERO)) ||
+                    ((gameField[0][0] == ZERO) && (gameField[1][0] == ZERO) && (gameField[2][0] == ZERO)) ||
+                    ((gameField[0][1] == ZERO) && (gameField[1][1] == ZERO) && (gameField[2][1] == ZERO)) ||
+                    ((gameField[0][2] == ZERO) && (gameField[1][2] == ZERO) && (gameField[2][2] == ZERO)) ||
+                    ((gameField[0][0] == ZERO) && (gameField[1][1] == ZERO) && (gameField[2][2] == ZERO)) ||
+                    ((gameField[0][2] == ZERO) && (gameField[1][1] == ZERO) && (gameField[2][0] == ZERO))) {
                 System.out.println(format(WIN_MESSAGE, PLAYER_TWO));
                 break;
             }  else if (noEmptyLeft){
