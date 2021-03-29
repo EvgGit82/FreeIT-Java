@@ -19,27 +19,21 @@ public class Task16 {
             randomNumbers[i] = random.nextInt(100);
         }
 
+        int indexMax = findMaxAndMin(randomNumbers, "max");
+        int indexMin = findMaxAndMin(randomNumbers, "min");
+
+
         System.out.println(Arrays.toString(randomNumbers));
-
-        int maxValue = randomNumbers[0];
-        int indexMax = 0;
-        int minValue = randomNumbers[0];
-        int indexMin = 0;
-
-        for (int i = 0; i < randomNumbers.length; i++) {
-            if (randomNumbers[i] > maxValue) {
-                maxValue = randomNumbers[i];
-                indexMax = i;
-            }
-
-            if (randomNumbers[i] < minValue) {
-                minValue = randomNumbers[i];
-                indexMin = i;
-            }
-        }
 
         System.out.println("Max: " + indexMax);
         System.out.println("Min: " + indexMin);
+
+        System.out.println("Total sum between the minimum and maximum units makes "
+                + calculateSumBetweenMinAndMax(randomNumbers, indexMin, indexMax));
+    }
+
+
+    public static int calculateSumBetweenMinAndMax(int [] array, int indexMin, int indexMax){
 
         int totalSum = 0;
 
@@ -47,10 +41,36 @@ public class Task16 {
         int lastNumberIndex = Math.max(indexMax, indexMin);
 
         for (int i = firstNumberIndex + 1; i < lastNumberIndex; i++) {
-            totalSum += randomNumbers[i];
+            totalSum += array[i];
+        }
+        return totalSum;
+    }
+
+    public static int findMaxAndMin (int [] array, String maxOrMin){
+
+        int maxValue = array[0];
+        int indexMax = 0;
+        int minValue = array[0];
+        int indexMin = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > maxValue) {
+                maxValue = array[i];
+                indexMax = i;
+            }
+
+            if (array[i] < minValue) {
+                minValue = array[i];
+                indexMin = i;
+            }
         }
 
-            System.out.println("Total sum between the minimum and maximum units makes " + totalSum);
-
+        if (maxOrMin.equals("max")) {
+            return indexMax;
+        } else if (maxOrMin.equals("min")){
+            return indexMin;
+        }
+        return -1;
     }
+
 }
