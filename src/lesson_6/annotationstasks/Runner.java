@@ -12,9 +12,17 @@ package lesson_6.annotationstasks;
 Написать программу, которая будет анализировать присутствие аннотации над классом MyService и если она присутствует -
 создавать экземпляр этого класса, задавать значения его полям и вызывать метод thisClassInfo (использовать возможности
 пакета reflection).
+
+Extension demanded:
+
+In SpringBoot the app start in main by command SpringApplication.run(Main.class);
+it scans all the packages of the application and looks up for the the annotations.
+As we know, that you app has just one annotation, you can omit providing the class
+So, main should contain something like NameOfApplication.run().
 */
 
 
+@TestAnnotation(version = 2.3)
 public class Runner {
 
     public static void main(String[] args) throws Exception {

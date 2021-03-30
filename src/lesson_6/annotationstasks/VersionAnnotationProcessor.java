@@ -3,6 +3,7 @@ package lesson_6.annotationstasks;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 
+@TestAnnotation(version = 2.3)
 public class VersionAnnotationProcessor {
 
     public void process(Class<?> clazz) throws Exception {

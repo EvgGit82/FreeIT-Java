@@ -6,11 +6,11 @@ import java.util.List;
 
 public class Annotations {
 
-    private static final String folderPath = "src/lesson_6/annotationstasks";
+    private static final String folderPath = "out/production/FreeIT-Java/lesson_6/annotationstasks";
 
     public static void run() throws Exception {
 
-        List<String> processedFileNames = getProcessedFileNames();
+        List<String> processedFileNames = getProcessedFileNames(folderPath);
 
         List<Class> classesList = getClassesList(processedFileNames);
 
@@ -18,7 +18,7 @@ public class Annotations {
     }
 
 
-    private static ArrayList<String> getProcessedFileNames () {
+    private static ArrayList<String> getProcessedFileNames (String folderPath) {
 
         File folder = new File (folderPath);
 
@@ -43,11 +43,15 @@ public class Annotations {
         return classesList;
     }
 
-
     private static void scanClassesForAnnotationAndRunThem (List<Class> classesList) throws Exception {
         for (Class aClass : classesList) {
             if (aClass.isAnnotationPresent(VersionAnnotation.class)) {
                 new VersionAnnotationProcessor().process(aClass);
+                System.out.println();
+            }
+            if (aClass.isAnnotationPresent(TestAnnotation.class)) {
+                new TestAnnotationProcessor().process(aClass);
+                System.out.println();
             }
         }
     }
