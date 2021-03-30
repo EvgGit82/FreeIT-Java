@@ -1,9 +1,6 @@
 package lesson_6.maintasks;
 
-import lesson_6.maintasks.polymorphclasses.IPolymorph;
-import lesson_6.maintasks.polymorphclasses.PolymorphArray;
-import lesson_6.maintasks.polymorphclasses.PolymorphArrayList;
-import lesson_6.maintasks.polymorphclasses.PolymorphLinkedList;
+import lesson_6.maintasks.polymorphclasses.*;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

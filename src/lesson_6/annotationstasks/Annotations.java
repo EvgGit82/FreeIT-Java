@@ -10,7 +10,7 @@ public class Annotations {
 
     public static void run() throws Exception {
 
-        List<String> processedFileNames = getProcessedFileNames(folderPath);
+        List<String> processedFileNames = getProcessedFileNames();
 
         List<Class> classesList = getClassesList(processedFileNames);
 
@@ -18,9 +18,9 @@ public class Annotations {
     }
 
 
-    private static ArrayList<String> getProcessedFileNames (String folderPath) {
+    private static ArrayList<String> getProcessedFileNames() {
 
-        File folder = new File (folderPath);
+        File folder = new File (Annotations.folderPath);
 
         File [] files = folder.listFiles();
 
