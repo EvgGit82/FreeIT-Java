@@ -10,10 +10,9 @@ public class TestAnnotationProcessor {
         boolean annotationPresent = clazz.isAnnotationPresent(TestAnnotation.class);
         if (annotationPresent) {
             TestAnnotation annotation = clazz.getAnnotation(TestAnnotation.class);
-            System.out.println("Class '" + clazz.getName() + "' has Test Annotation"
+            System.out.println("Class '" + clazz.getSimpleName() + "' has Test Annotation"
                     + "Annotation version: " + annotation.version());
 
-            
 
         }
     }
