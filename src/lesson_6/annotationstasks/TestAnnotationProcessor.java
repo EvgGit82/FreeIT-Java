@@ -11,8 +11,7 @@ public class TestAnnotationProcessor {
         if (annotationPresent) {
             TestAnnotation annotation = clazz.getAnnotation(TestAnnotation.class);
             System.out.println("Class '" + clazz.getSimpleName() + "' has Test Annotation"
-                    + "Annotation version: " + annotation.version());
-
+                    + " (version: " + annotation.version() + ")");
 
         }
     }
