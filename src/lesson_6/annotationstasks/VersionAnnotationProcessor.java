@@ -3,7 +3,7 @@ package lesson_6.annotationstasks;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 
-@TestAnnotation(version = 2.3)
+@TestAnnotation(version = 6.3, versionCodeName = "And also loving patterns")
 public class VersionAnnotationProcessor implements IAnnotationProcessor {
 
     public void process(Class<?> clazz) throws Exception {

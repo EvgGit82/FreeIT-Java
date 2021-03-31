@@ -8,7 +8,8 @@ public class TestAnnotationProcessor implements IAnnotationProcessor {
         if (annotationPresent) {
             TestAnnotation annotation = clazz.getAnnotation(TestAnnotation.class);
             System.out.println("Class '" + clazz.getSimpleName() + "' has Test Annotation"
-                    + " (version: " + annotation.version() + ")\n");
+                    + " (version: " + annotation.version()
+                    + ", code name \'" + annotation.versionCodeName() +"\')\n");
         }
     }
 }

@@ -22,7 +22,7 @@ So, main should contain something like NameOfApplication.run().
 */
 
 
-@TestAnnotation(version = 2.3)
+@TestAnnotation(version = 2.3, versionCodeName = "Getting crazy with annotations")
 public class Runner {
 
     public static void main(String[] args) throws Exception {

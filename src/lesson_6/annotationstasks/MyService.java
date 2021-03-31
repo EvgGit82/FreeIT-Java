@@ -2,7 +2,7 @@ package lesson_6.annotationstasks;
 
 import java.util.Objects;
 
-@VersionAnnotation (isActive = true, version = 1.7, versionCodeName = "Nougat")
+@VersionAnnotation(isActive = true, version = 1.7, versionCodeName = "Nougat")
 public class MyService {
 
     private String className;
