@@ -26,20 +26,9 @@ public class Annotations {
 
         File [] files = folder.listFiles();
 
-        ArrayList<File> onlyfiles = new ArrayList<>();
-
-        for (File file : files) {
-            if (file.isDirectory()){
-                continue;
-            } else {
-                onlyfiles.add(file);
-            }
-        }
-
         ArrayList<String> processedFileNames = new ArrayList<>();
 
-
-        for (File file : onlyfiles) {
+        for (File file : files) {
             processedFileNames.add("lesson_6.annotationstasks." +file.getName().substring(0, file.getName().indexOf('.')));
         }
         return processedFileNames;
