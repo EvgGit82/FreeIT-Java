@@ -16,7 +16,7 @@ public class Annotations {
 
         List<Class> classesList = getClassesList(processedFileNames);
 
-        scanClassesForAnnotationAndRunThem(classesList);
+        scanClassesForCustomAnnotationsAndRunThem(classesList);
     }
 
 
@@ -44,7 +44,7 @@ public class Annotations {
         return classesList;
     }
 
-    private static void scanClassesForAnnotationAndRunThem (List<Class> classesList) throws Exception {
+    private static void scanClassesForCustomAnnotationsAndRunThem(List<Class> classesList) throws Exception {
         for (Class aClass : classesList) {
             Annotation[] annotationsArray = aClass.getAnnotations();
             if (annotationsArray.length != 0) {
