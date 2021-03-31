@@ -4,7 +4,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 
 @TestAnnotation(version = 2.3)
-public class VersionAnnotationProcessor {
+public class VersionAnnotationProcessor implements IAnnotationProcessor {
 
     public void process(Class<?> clazz) throws Exception {
         boolean annotationPresent = clazz.isAnnotationPresent(VersionAnnotation.class);

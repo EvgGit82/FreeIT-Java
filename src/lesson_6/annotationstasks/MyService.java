@@ -27,7 +27,7 @@ public class MyService {
     private void thisClassInfo(){
         System.out.println("[Information on this class (provided by thisClassInfo PRIVATE method): class type = " + MyService.class
                 + ", number of fields = 2,\n\t\t\t\tgetters and setters availability = available, " +
-                "other methods: equals(), hashCode(), toString()]");
+                "other methods: equals(), hashCode(), toString()]\n");
     }
 
     @Override

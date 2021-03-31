@@ -1,12 +1,15 @@
 package lesson_6.annotationstasks;
 
 import java.io.File;
+import java.lang.annotation.Annotation;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Annotations {
 
     private static final String folderPath = "out/production/FreeIT-Java/lesson_6/annotationstasks";
+    private static IAnnotationProcessor processor;
 
     public static void run() throws Exception {
 
@@ -45,13 +48,10 @@ public class Annotations {
 
     private static void scanClassesForAnnotationAndRunThem (List<Class> classesList) throws Exception {
         for (Class aClass : classesList) {
-            if (aClass.isAnnotationPresent(VersionAnnotation.class)) {
-                new VersionAnnotationProcessor().process(aClass);
-                System.out.println();
-            }
-            if (aClass.isAnnotationPresent(TestAnnotation.class)) {
-                new TestAnnotationProcessor().process(aClass);
-                System.out.println();
+            Annotation[] annotationsArray = aClass.getAnnotations();
+            if (annotationsArray.length != 0) {
+                processor = ProcessorManagerFactory.create(annotationsArray[0].toString());
+                processor.process(aClass);
             }
         }
     }
