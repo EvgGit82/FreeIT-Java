@@ -59,8 +59,10 @@ public class Annotations {
         for (Class aClass : classesList) {
             Annotation[] annotationsArray = aClass.getAnnotations();
             if (annotationsArray.length != 0) {
-                processor = ProcessorManagerFactory.create(annotationsArray[0].toString());
-                processor.process(aClass);
+                for (Annotation annotation : annotationsArray) {
+                    processor = ProcessorManagerFactory.create(annotation.toString());
+                    processor.process(aClass);
+                }
             }
         }
     }
