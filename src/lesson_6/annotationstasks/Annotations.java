@@ -8,23 +8,27 @@ import java.util.List;
 public class Annotations {
 
     private static final String folderPath = "out/production/FreeIT-Java/lesson_6/annotationstasks";
-    private static IAnnotationProcessor processor;
 
     public static void run() throws Exception {
 
-        List<String> processedFileNames = getProcessedFileNames();
+        File [] folderFiles = getFiles();
+
+        List<String> processedFileNames = getProcessedFileNames(folderFiles);
 
         List<Class> classesList = getClassesList(processedFileNames);
 
         scanClassesForCustomAnnotationsAndRunThem(classesList);
     }
 
-
-    private static ArrayList<String> getProcessedFileNames() {
-
+    private static File [] getFiles() {
         File folder = new File (Annotations.folderPath);
 
         File [] files = folder.listFiles();
+
+        return files;
+    }
+
+    private static ArrayList<String> getProcessedFileNames(File [] files) {
 
         ArrayList<String> processedFileNames = new ArrayList<>();
 
@@ -33,7 +37,6 @@ public class Annotations {
         }
         return processedFileNames;
     }
-
 
     private static List<Class> getClassesList(List<String> processedFileNames) throws ClassNotFoundException {
         List<Class> classesList = new ArrayList<>();
@@ -49,7 +52,7 @@ public class Annotations {
             Annotation[] annotationsArray = aClass.getAnnotations();
             if (annotationsArray.length != 0) {
                 for (Annotation annotation : annotationsArray) {
-                    processor = ProcessorManagerFactory.create(annotation.toString());
+                    IAnnotationProcessor processor = ProcessorManagerFactory.create(annotation.toString());
                     processor.process(aClass);
                 }
             }
