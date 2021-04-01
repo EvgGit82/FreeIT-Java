@@ -5,7 +5,7 @@ import java.lang.annotation.Annotation;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Annotations {
+public class CustomAnnotations {
 
     private static final String folderPath = "out/production/FreeIT-Java/lesson_6/annotationstasks";
 
@@ -21,7 +21,7 @@ public class Annotations {
     }
 
     private static File [] getFiles() {
-        File folder = new File (Annotations.folderPath);
+        File folder = new File (CustomAnnotations.folderPath);
 
         File [] files = folder.listFiles();
 

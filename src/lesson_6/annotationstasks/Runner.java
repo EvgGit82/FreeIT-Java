@@ -13,7 +13,7 @@ package lesson_6.annotationstasks;
 создавать экземпляр этого класса, задавать значения его полям и вызывать метод thisClassInfo (использовать возможности
 пакета reflection).
 
-Extension demanded:
+Extension demanded by reviewer Michael:
 
 In SpringBoot the app start in main by command SpringApplication.run(Main.class);
 it scans all the packages of the application and looks up for the the annotations.
@@ -27,7 +27,7 @@ public class Runner {
 
     public static void main(String[] args) throws Exception {
 
-        Annotations.run();
+        CustomAnnotations.run();
 
     }
 }
