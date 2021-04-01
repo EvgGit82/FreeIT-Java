@@ -6,6 +6,15 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+
+/*
+Написать класс, который умеет хранить в себе массив любых типов данных (int, long etc.).
+Реализовать метод get(int index), который возвращает любой элемент массива по индексу.
+
+Extension demanded by reviewer Michael:
+to extend, you may make a interface and implement this like List and ArrayList
+*/
+
 public class Task28Runner {
     public static void main(String[] args) {
 
