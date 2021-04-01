@@ -2,7 +2,6 @@ package lesson_6.annotationstasks;
 
 import java.io.File;
 import java.lang.annotation.Annotation;
-import java.util.ArrayList;
 import java.util.List;
 
 public class CustomAnnotations {
@@ -11,40 +10,15 @@ public class CustomAnnotations {
 
     public static void run() throws Exception {
 
-        File [] folderFiles = getFiles();
+        FilesProcessor filesProcessor = new FilesProcessor();
 
-        List<String> processedFileNames = getProcessedFileNames(folderFiles);
+        File [] folderFiles = filesProcessor.getFiles(folderPath);
 
-        List<Class> classesList = getClassesList(processedFileNames);
+        List<String> processedFileNames = filesProcessor.getProcessedFileNames(folderFiles);
+
+        List<Class> classesList = filesProcessor.getClassesList(processedFileNames);
 
         scanClassesForCustomAnnotationsAndRunThem(classesList);
-    }
-
-    private static File [] getFiles() {
-        File folder = new File (CustomAnnotations.folderPath);
-
-        File [] files = folder.listFiles();
-
-        return files;
-    }
-
-    private static ArrayList<String> getProcessedFileNames(File [] files) {
-
-        ArrayList<String> processedFileNames = new ArrayList<>();
-
-        for (File file : files) {
-            processedFileNames.add("lesson_6.annotationstasks." +file.getName().substring(0, file.getName().indexOf('.')));
-        }
-        return processedFileNames;
-    }
-
-    private static List<Class> getClassesList(List<String> processedFileNames) throws ClassNotFoundException {
-        List<Class> classesList = new ArrayList<>();
-
-        for (String processedFileName : processedFileNames) {
-            classesList.add(Class.forName(processedFileName));
-        }
-        return classesList;
     }
 
     private static void scanClassesForCustomAnnotationsAndRunThem(List<Class> classesList) throws Exception {
