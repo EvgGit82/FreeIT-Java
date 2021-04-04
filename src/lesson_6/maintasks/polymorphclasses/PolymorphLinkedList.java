@@ -2,8 +2,7 @@ package lesson_6.maintasks.polymorphclasses;
 
 import java.util.LinkedList;
 
-
-public class PolymorphLinkedList<T> implements IPolymorph {
+public class PolymorphLinkedList<T> implements IPolymorph<T> {
 
     private LinkedList<T> list;
 

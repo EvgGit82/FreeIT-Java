@@ -2,7 +2,7 @@ package lesson_6.maintasks.polymorphclasses;
 
 import java.util.ArrayList;
 
-public class PolymorphArrayList<T> implements IPolymorph {
+public class PolymorphArrayList<T> implements IPolymorph<T> {
 
     ArrayList<T> list;
 
