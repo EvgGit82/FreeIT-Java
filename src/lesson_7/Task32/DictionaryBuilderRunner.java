@@ -8,14 +8,10 @@ public class DictionaryBuilderRunner {
 
     public static void main(String[] args) {
 
-        DictionaryBuilder db = new DictionaryBuilder();
-
-        db.getSeparateWords(TextBase.childrenSong); //Change text from the TextBase
-
-        db.buildFrequencyDictionary();
-
-        db.sortFrequencyDictionary();
-
-        db.printSortedDictionary();
+        new DictionaryBuilder()
+                .getSeparateWords(TextBase.childrenSong) //Change text from TextBase here
+                .buildFrequencyDictionary()
+                .sortFrequencyDictionary()
+                .printSortedDictionary();
     }
 }

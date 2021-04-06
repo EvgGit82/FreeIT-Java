@@ -9,21 +9,23 @@ public class DictionaryBuilder {
     private final LinkedHashMap<String, Integer> frequencyDictionary = new LinkedHashMap<>();
 
 
-    public void getSeparateWords(String string) {
+    public DictionaryBuilder getSeparateWords(String string) {
         StringTokenizer stringTokenizer = new StringTokenizer(string.trim(), " -,;.:!?{}[]()\"\n");
 
         while (stringTokenizer.hasMoreTokens()){
             separateWords.add(stringTokenizer.nextToken().toLowerCase());
         }
+        return this;
     }
 
 
-    public void buildFrequencyDictionary() {
+    public DictionaryBuilder buildFrequencyDictionary() {
         ArrayList <String> uniqueWordsList = new ArrayList<>(new LinkedHashSet<>(separateWords));
 
         for (String string : uniqueWordsList) {
             unsortedFrequencyDictionary.put(string, getWordRepetitions(string, separateWords));
         }
+        return this;
     }
 
 
@@ -39,7 +41,7 @@ public class DictionaryBuilder {
     }
 
 
-    public void sortFrequencyDictionary() {
+    public DictionaryBuilder sortFrequencyDictionary() {
         List<Map.Entry<String, Integer>> sortingList = new ArrayList<>(unsortedFrequencyDictionary.entrySet());
         sortingList.sort(Map.Entry.comparingByValue());
         Collections.reverse(sortingList);
@@ -47,6 +49,7 @@ public class DictionaryBuilder {
         for (Map.Entry<String, Integer> entry : sortingList) {
             frequencyDictionary.put(entry.getKey(), entry.getValue());
         }
+        return this;
     }
 
     public void printSortedDictionary (){
