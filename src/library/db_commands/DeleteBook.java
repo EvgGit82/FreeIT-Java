@@ -27,7 +27,7 @@ public class DeleteBook {
         }
 
         if (initialListSize == Library.getInstance().getBooksList().size()){
-            System.out.println("Delete failed.");
+            System.out.println("Delete failed. Wrong id.");
         }
     }
 }
