@@ -8,14 +8,12 @@ public class DictionaryRunner {
 
     public static void main(String[] args) {
 
-        Dictionary dictionary = new DictionaryCreator()
-                .createFrequencyDictionaryFor(TextBase.childrenSong);
+        Dictionary dictionary = DictionaryCreator.createFrequencyDictionaryFor(TextBase.childrenSong);
         dictionary.printFrequencyDictionary();
 
         System.out.println();
 
-        Dictionary second_dictionary = new DictionaryCreator()
-                .createFrequencyDictionaryFor(TextBase.yesterday);
+        Dictionary second_dictionary = DictionaryCreator.createFrequencyDictionaryFor(TextBase.yesterday);
         second_dictionary.printFrequencyDictionary();
     }
 }
