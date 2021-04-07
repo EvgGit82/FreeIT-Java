@@ -2,14 +2,14 @@ package lesson_7.Task32;
 
 import java.util.*;
 
-public class DictionaryBuilder {
+public class Dictionary {
 
     private final ArrayList <String> separateWords = new ArrayList<>();
     private final HashMap<String, Integer> unsortedFrequencyDictionary = new HashMap<>();
     private final LinkedHashMap<String, Integer> frequencyDictionary = new LinkedHashMap<>();
 
 
-    public DictionaryBuilder getSeparateWords(String string) {
+    public Dictionary getSeparateWords(String string) {
         StringTokenizer stringTokenizer = new StringTokenizer(string.trim(), " -,;.:!?{}[]()\"\n");
 
         while (stringTokenizer.hasMoreTokens()){
@@ -19,7 +19,7 @@ public class DictionaryBuilder {
     }
 
 
-    public DictionaryBuilder buildFrequencyDictionary() {
+    public Dictionary buildFrequencyDictionary() {
         ArrayList <String> uniqueWordsList = new ArrayList<>(new LinkedHashSet<>(separateWords));
 
         for (String string : uniqueWordsList) {
@@ -41,7 +41,7 @@ public class DictionaryBuilder {
     }
 
 
-    public DictionaryBuilder sortFrequencyDictionary() {
+    public Dictionary sortFrequencyDictionary() {
         List<Map.Entry<String, Integer>> sortingList = new ArrayList<>(unsortedFrequencyDictionary.entrySet());
         sortingList.sort(Map.Entry.comparingByValue());
         Collections.reverse(sortingList);
@@ -52,7 +52,7 @@ public class DictionaryBuilder {
         return this;
     }
 
-    public void printSortedDictionary (){
+    public void printFrequencyDictionary(){
         for (Map.Entry<String, Integer> pair : frequencyDictionary.entrySet()) {
             System.out.println("\"" + pair.getKey() + "\" repeats " + pair.getValue() + " time(s)");
         }
