@@ -6,10 +6,14 @@ import library.entity_classes.Genre;
 
 public class LoadTestData {
 
-    public void execute () throws InterruptedException {
+    public void execute () {
 
         System.out.println("Adding test books...");
-        Thread.sleep(1000);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         new AddBook(new Book("Gone with the Wind", new Genre(8))).execute();
         new AddBook(new Book ("Treasure Island", new Genre(1))).execute();

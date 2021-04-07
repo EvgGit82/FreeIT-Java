@@ -9,7 +9,7 @@ public class GetNumberFromScanner {
         try {
             return Integer.parseInt(scanner.nextLine().trim());
         } catch (NumberFormatException e) {
-            System.out.println("Wrong number!");
+            System.out.println("This is not a number!");
         }
         return -1;
     }
