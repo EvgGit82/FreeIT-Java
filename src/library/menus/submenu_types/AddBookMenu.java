@@ -2,7 +2,6 @@ package library.menus.submenu_types;
 
 import library.db_commands.AddBook;
 import library.db_commands.AssembleBook;
-import library.entity_classes.Book;
 import library.entity_classes.Library;
 import library.utils.CommonProperties;
 import library.utils.GetNumberFromScanner;
@@ -24,14 +23,9 @@ public class AddBookMenu implements IMenu {
             System.out.println("1. Start adding a book");
             System.out.println("0. Return to Main menu");
 
-            int option = new GetNumberFromScanner().execute();
-
-            Book bookToBeCreated;
-
-            switch (option) {
+            switch (new GetNumberFromScanner().execute()) {
                 case 1:
-                    bookToBeCreated = new AssembleBook().execute();
-                    new AddBook(bookToBeCreated).execute();
+                    new AddBook(new AssembleBook().execute()).execute();
                     System.out.println();
                     break;
                 case 0:

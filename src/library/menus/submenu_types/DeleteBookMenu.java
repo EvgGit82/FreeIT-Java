@@ -24,16 +24,14 @@ public class DeleteBookMenu implements IMenu {
             System.out.println();
 
             System.out.println("Select option: ");
-            int option = new GetNumberFromScanner().execute();
 
-            switch (option) {
+            switch (new GetNumberFromScanner().execute()) {
                 case 1:
                     new PrintBookList().execute();
                     break;
                 case 2:
                     System.out.println("Enter the book's id:");
-                    int bookId = new GetNumberFromScanner().execute();
-                    new DeleteBook(bookId).execute();
+                    new DeleteBook(new GetNumberFromScanner().execute()).execute();
                     System.out.println();
                     break;
                 case 0:

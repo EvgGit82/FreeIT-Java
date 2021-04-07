@@ -38,6 +38,7 @@ public class Genre {
     public GenreName getGenreId() {
         return genresList.get(genreId);
     }
+
     public void setGenreId(int genreId) {
         if (genreId > CommonProperties.NUMBER_OF_GENRES) {
             System.out.println("Operation unavailable - value out of range! Default value will be applied");

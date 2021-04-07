@@ -21,15 +21,12 @@ public class EditBookMenu implements IMenu {
             System.out.println("2. Edit existing book from the library");
             System.out.println("0. Return to main menu");
 
-            int option = new GetNumberFromScanner().execute();
-
-            switch (option){
+            switch (new GetNumberFromScanner().execute()){
                 case 1:
                     new PrintBookList().execute();
                     break;
                 case 2:
-                    Book editedBook = prepareBookForEditing();
-                    new EditBook(editedBook).execute();
+                    new EditBook(prepareBookForEditing()).execute();
                     break;
                 case 0:
                     return;
