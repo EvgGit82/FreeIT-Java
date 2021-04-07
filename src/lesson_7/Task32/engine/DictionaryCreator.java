@@ -1,4 +1,4 @@
-package lesson_7.Task32;
+package lesson_7.Task32.engine;
 
 public class DictionaryCreator {
 
