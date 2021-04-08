@@ -7,7 +7,7 @@ import java.util.Iterator;
 
 public class EditBook {
 
-    Book bookToEdit;
+    private Book bookToEdit;
 
     public EditBook(Book bookToEdit) {
         this.bookToEdit = bookToEdit;

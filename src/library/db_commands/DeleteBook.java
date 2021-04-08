@@ -7,7 +7,7 @@ import java.util.Iterator;
 
 public class DeleteBook {
 
-    int bookId;
+    private int bookId;
 
     public DeleteBook(int bookId) {
         this.bookId = bookId;
