@@ -18,12 +18,12 @@ public class Task30 {
         }
 
         System.out.println("Original array: ");
-        System.out.println(randomNumbers.toString());
+        System.out.println(randomNumbers);
 
         removeRepetitions(randomNumbers);
 
         System.out.println("Repetitions removed: ");
-        System.out.println(randomNumbers.toString());
+        System.out.println(randomNumbers);
     }
 
 

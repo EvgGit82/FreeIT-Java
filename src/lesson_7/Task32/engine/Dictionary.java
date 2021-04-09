@@ -9,8 +9,8 @@ public class Dictionary {
     private final LinkedHashMap<String, Integer> frequencyDictionary = new LinkedHashMap<>();
 
 
-    public Dictionary getSeparateWords(String string) {
-        StringTokenizer stringTokenizer = new StringTokenizer(string.trim(), " -,;.:!?{}[]()\"\n");
+    public Dictionary getSeparateWords(String originalText) {
+        StringTokenizer stringTokenizer = new StringTokenizer(originalText.trim(), " -,;.:!?{}[]()\"\n");
 
         while (stringTokenizer.hasMoreTokens()){
             separateWords.add(stringTokenizer.nextToken().toLowerCase());
@@ -22,18 +22,18 @@ public class Dictionary {
     public Dictionary buildFrequencyDictionary() {
         ArrayList <String> uniqueWordsList = new ArrayList<>(new LinkedHashSet<>(separateWords));
 
-        for (String string : uniqueWordsList) {
-            unsortedFrequencyDictionary.put(string, getWordRepetitions(string, separateWords));
+        for (String aWord : uniqueWordsList) {
+            unsortedFrequencyDictionary.put(aWord, getWordRepetitions(aWord));
         }
         return this;
     }
 
 
-    private Integer getWordRepetitions(String string, ArrayList<String> separateWords) {
+    private Integer getWordRepetitions(String wordToCount) {
         int repetitionsCount = 0;
 
         for (String separateWord : separateWords) {
-            if (separateWord.equals(string)) {
+            if (separateWord.equals(wordToCount)) {
                 repetitionsCount++;
             }
         }

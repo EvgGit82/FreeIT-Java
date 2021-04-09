@@ -21,7 +21,7 @@ public class Task31 {
             marks.add(i, random.nextInt(10)+1);
         }
 
-        System.out.println(marks.toString());
+        System.out.println(marks);
 
         Integer maxMark = 0;
 

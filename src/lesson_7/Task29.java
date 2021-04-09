@@ -23,7 +23,7 @@ public class Task29 {
         }
 
         System.out.println("Initial marks list: ");
-        System.out.println(marks.toString());
+        System.out.println(marks);
 
         Iterator <Integer> iterator = marks.iterator();
 
@@ -35,7 +35,7 @@ public class Task29 {
         }
 
         System.out.println("All marks below 6 have been deleted: ");
-        System.out.println(marks.toString());
+        System.out.println(marks);
 
     }
 }
