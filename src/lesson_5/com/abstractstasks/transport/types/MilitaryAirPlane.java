@@ -25,7 +25,7 @@ public class MilitaryAirPlane extends AirTransport {
         return (numberOfMissiles > 0) ? "Missile launched..." : "No missiles left!";
     }
 
-    public String escapeSystemlaunch () {
+    public String launchEscapeSystem() {
         return (hasEscapeSystem) ? "Catapult launch!" : "The system is not available!";
     }
 

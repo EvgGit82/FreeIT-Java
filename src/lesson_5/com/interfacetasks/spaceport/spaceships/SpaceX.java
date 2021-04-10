@@ -21,7 +21,7 @@ public class SpaceX implements IStart {
     }
 
     @Override
-    public void enginesStart() {
+    public void startEngines() {
         System.out.println("SpaceX \'" + name + "\' engines ON! All systems online!");
     }
 

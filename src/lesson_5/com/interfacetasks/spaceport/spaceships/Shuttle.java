@@ -21,7 +21,7 @@ public class Shuttle implements IStart {
     }
 
     @Override
-    public void enginesStart() {
+    public void startEngines() {
         System.out.println("Shuttle \'" + name + "\' engines ON! All systems online!");
     }
 

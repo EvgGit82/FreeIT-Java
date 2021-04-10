@@ -18,7 +18,7 @@ public class Soyuz implements IStart{
     }
 
     @Override
-    public void enginesStart() {
+    public void startEngines() {
         System.out.println("Soyuz \'" + name + "\' engines ON! All systems online!");
     }
 

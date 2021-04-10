@@ -81,21 +81,21 @@ public class TransportRunner {
         System.out.println("\n");
 
         System.out.println(truck.toString());
-        System.out.println(truck.freeSpaceAvailability(10));
-        System.out.println(truck.freeSpaceAvailability(20));
+        System.out.println(truck.checkFreeSpaceAvailability(10));
+        System.out.println(truck.checkFreeSpaceAvailability(20));
 
         System.out.println();
 
         System.out.println(passengerJet.toString());
-        System.out.println(passengerJet.freeSpaceAvailability(600));
-        System.out.println(passengerJet.freeSpaceAvailability(800));
+        System.out.println(passengerJet.checkFreeSpaceAvailability(600));
+        System.out.println(passengerJet.checkFreeSpaceAvailability(800));
 
         System.out.println();
 
         for (MilitaryAirPlane plane : militaryPlanesList) {
             System.out.println(plane.toString());
             System.out.println(plane.launchMissile());
-            System.out.println(plane.escapeSystemlaunch());
+            System.out.println(plane.launchEscapeSystem());
             System.out.println();
         }
     }

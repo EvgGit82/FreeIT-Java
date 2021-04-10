@@ -17,7 +17,7 @@ public class CivilAirPlane extends AirTransport {
         this.hasBusinessClass = hasBusinessClass;
     }
 
-    public String freeSpaceAvailability(int passengerSeatsRequired) {
+    public String checkFreeSpaceAvailability(int passengerSeatsRequired) {
         return (passengersNumbers - passengerSeatsRequired) >= 0 ? "The jet has enough seats." : "You need a larger jet.";
     }
 

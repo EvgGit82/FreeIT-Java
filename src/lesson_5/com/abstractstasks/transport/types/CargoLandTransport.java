@@ -15,7 +15,7 @@ public class CargoLandTransport extends LandTransport {
         this.capacity = capacity;
     }
 
-    public String freeSpaceAvailability(double cargoToBeLoaded) {
+    public String checkFreeSpaceAvailability(double cargoToBeLoaded) {
         return (capacity - cargoToBeLoaded) >= 0 ? "The truck is loaded." : "You need a larger truck.";
     }
 
