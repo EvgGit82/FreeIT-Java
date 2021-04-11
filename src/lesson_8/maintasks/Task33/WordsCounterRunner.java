@@ -1,4 +1,4 @@
-package lesson_8.Task33;
+package lesson_8.maintasks.Task33;
 
 /*
 Создать файл с текстом, прочитать, подсчитать в тексте количество знаков препинания и слов.
@@ -6,7 +6,7 @@ package lesson_8.Task33;
 
 public class WordsCounterRunner {
 
-    private final static String FILE_PATH = "src/lesson_8/Task33/sourceText.txt";
+    private final static String FILE_PATH = "src/lesson_8/maintasks/Task33/sourceText.txt";
 
     public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-package lesson_8.Task35;
+package lesson_8.maintasks.Task35;
 
 /*
 Записать в двоичный файл 20 случайных чисел. Прочитать записанный файл, распечатать числа и их среднее арифметическое
@@ -10,7 +10,7 @@ import java.util.Random;
 
 public class Runner {
 
-    private final static String FILE_PATH = "src/lesson_8/Task35/outputBinaryFile.txt";
+    private final static String FILE_PATH = "src/lesson_8/maintasks/Task35/outputBinaryFile.txt";
 
     public static void main(String[] args) throws IOException {
 

@@ -1,4 +1,4 @@
-package lesson_8.Task36;
+package lesson_8.maintasks.Task36;
 
 import java.io.File;
 import java.util.ArrayList;

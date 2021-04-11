@@ -1,4 +1,4 @@
-package lesson_8.Task34;
+package lesson_8.maintasks.Task34;
 
 /*
 Имеется файл с текстом, в котором присутствуют числа. Найти все числа, распечатать, посчитать сумму, убрать все
@@ -7,7 +7,7 @@ package lesson_8.Task34;
 
 public class NumbersFinderRunner {
 
-    private final static String FILE_PATH = "src/lesson_8/Task34/sourceText";
+    private final static String FILE_PATH = "src/lesson_8/maintasks/Task34/sourceText";
 
     public static void main(String[] args) {
 

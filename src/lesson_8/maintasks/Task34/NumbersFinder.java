@@ -1,4 +1,4 @@
-package lesson_8.Task34;
+package lesson_8.maintasks.Task34;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
