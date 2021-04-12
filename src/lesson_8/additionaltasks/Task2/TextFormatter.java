@@ -10,7 +10,7 @@ public class TextFormatter {
     public boolean checkSentenceLength (String sentenceToAnalyze) {
         wordList.clear();
         getWordList(sentenceToAnalyze);
-        return wordList.size() < 6;
+        return (wordList.size() > 2) && (wordList.size() < 6);
     }
 
     public boolean checkForPalindromes (String sentenceToAnalyze) {
