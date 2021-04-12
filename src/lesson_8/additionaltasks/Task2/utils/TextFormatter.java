@@ -1,4 +1,4 @@
-package lesson_8.additionaltasks.Task2;
+package lesson_8.additionaltasks.Task2.utils;
 
 import java.util.ArrayList;
 import java.util.StringTokenizer;

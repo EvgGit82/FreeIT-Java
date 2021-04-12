@@ -1,6 +1,8 @@
 package lesson_8.additionaltasks.Task2;
 
-import java.io.*;
+import lesson_8.additionaltasks.Task2.utils.FileHandler;
+import lesson_8.additionaltasks.Task2.utils.TextFormatter;
+
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
@@ -33,8 +35,9 @@ public class TextFormatterRunner {
     public static void main(String[] args) {
 
         TextFormatter textFormatter = new TextFormatter();
+        FileHandler fileHandler = new FileHandler();
 
-        sourceTextAsString = getTextFromFile() ;
+        sourceTextAsString = fileHandler.readTextFromFile(SOURCE_TEXT_PATH);
         breakTextIntoSentences();
         separateSentences.remove(separateSentences.size()-1);
 
@@ -44,21 +47,8 @@ public class TextFormatterRunner {
             }
         }
 
-        writeTextToFile();
+        fileHandler.writeTextToFile(TARGET_TEXT_PATH, filteredSentences);
 
-    }
-
-    private static String getTextFromFile () {
-        StringBuilder textCollector = new StringBuilder();
-
-        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(SOURCE_TEXT_PATH)))
-        {
-            for (String string; (string = bufferedReader.readLine()) != null; )
-                textCollector.append(string).append(" ");
-        }catch (IOException e) {
-            System.out.println("File is not found.");
-        }
-        return textCollector.toString();
     }
 
     private static void breakTextIntoSentences () {
@@ -66,21 +56,6 @@ public class TextFormatterRunner {
 
         while (stringTokenizer.hasMoreTokens()){
             separateSentences.add(stringTokenizer.nextToken().trim() + ".");
-        }
-    }
-
-    private static void writeTextToFile () {
-        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(TARGET_TEXT_PATH)))
-        {
-            bufferedWriter.write("SENTENCES BELOW 6 WORDS FROM THE SOURCE FILE CONTAINING PALINDROMES: ");
-            bufferedWriter.newLine();
-
-            for (String aPalindrome : filteredSentences) {
-                bufferedWriter.write(aPalindrome);
-                bufferedWriter.newLine();
-            }
-        }catch (IOException e) {
-            System.out.println("Writing to file failed.");
         }
     }
 }
