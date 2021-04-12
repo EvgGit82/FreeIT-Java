@@ -17,7 +17,7 @@ package lesson_8.additionaltasks.Task3;
 public class CensorshipRunner {
 
     private static final String SOURCE_TEXT_PATH = "src/lesson_8/additionaltasks/Task3/sourceText.txt";
-    private static final String BLACKLIST_PATH = "src/lesson_8/additionaltasks/Task3/profanesList.txt";
+    private static final String BLACKLIST_PATH = "src/lesson_8/additionaltasks/Task3/blacklist.txt";
 
 
     public static void main(String[] args) {
