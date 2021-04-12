@@ -65,11 +65,11 @@ public class CensorshipFilter {
 
     public void printResults () {
         System.out.println("The text " + ((sentencesFilteredOut.size() > 0) ? "didn't pass" : "passed" )
-                + " the assessment.");
+                + " censorship assessment.");
 
         if (sentencesFilteredOut.size() > 0) {
-            System.out.println("The text contains " + sentencesFilteredOut.size() + " blacklisted words");
-            System.out.println("The following lines shall be modified: ");
+            System.out.println(sentencesFilteredOut.size() + " sentence(s) contain blacklisted words.");
+            System.out.println("The following line(s) shall be modified: ");
 
             for (String aSentence : sentencesFilteredOut) {
                 System.out.println("\"" + aSentence + "\"");
