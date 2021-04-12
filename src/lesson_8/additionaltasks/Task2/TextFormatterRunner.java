@@ -48,7 +48,6 @@ public class TextFormatterRunner {
         }
 
         fileHandler.writeTextToFile(TARGET_TEXT_PATH, filteredSentences);
-
     }
 
     private static void breakTextIntoSentences () {
