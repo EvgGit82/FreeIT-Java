@@ -34,18 +34,16 @@ public class EditBookMenu implements IMenu {
         }
     }
 
-    private Book prepareBookForEditing() {
+    private int prepareBookForEditing() {
         boolean isPresent = false;
-        int id = -1;
+        int bookToEditId = -1;
 
         while (!isPresent) {
             System.out.println("Enter existing book's id: ");
-            id = new GetNumberFromScanner().execute();
-            isPresent = bookAvailabilityVerification(id);
+            bookToEditId = new GetNumberFromScanner().execute();
+            isPresent = bookAvailabilityVerification(bookToEditId);
         }
-        Book editedBook = new AssembleBook().execute();
-        editedBook.setId(id);
-        return editedBook;
+        return bookToEditId;
     }
 
     private boolean bookAvailabilityVerification (int id) {
