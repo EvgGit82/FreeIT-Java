@@ -1,13 +1,10 @@
 package library.db_commands;
 
-import library.entity_classes.Book;
 import library.entity_classes.Genre;
 import library.entity_classes.Library;
 import library.utils.CommonProperties;
 import library.utils.GetLineFromScanner;
 import library.utils.GetNumberFromScanner;
-
-import java.util.Iterator;
 
 public class EditBook {
 
@@ -59,5 +56,4 @@ public class EditBook {
         Library.getInstance().getBooksList().get(bookPosition).setTitle(newTitle);
         Library.getInstance().getBooksList().get(bookPosition).setGenre(new Genre(newGenre));
     }
-
 }

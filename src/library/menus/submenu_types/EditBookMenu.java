@@ -1,6 +1,5 @@
 package library.menus.submenu_types;
 
-import library.db_commands.AssembleBook;
 import library.db_commands.EditBook;
 import library.db_commands.PrintBookList;
 import library.entity_classes.Book;
