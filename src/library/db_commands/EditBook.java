@@ -9,7 +9,7 @@ public class EditBook {
 
     private int bookId;
     private String newTitle;
-    private int newGenre;
+    private int newGenreNumber;
     int bookPosition;
 
     public EditBook(int bookId) {
@@ -43,11 +43,11 @@ public class EditBook {
     private void getNewBookInfo() {
         System.out.println("Enter new title of the book");
         newTitle = new GetLineFromScanner().execute();
-        newGenre = new GetGenreNumber().execute();
+        newGenreNumber = new GetGenreNumber().execute();
     }
 
     private void changeBookInfo () {
         Library.getInstance().getBooksList().get(bookPosition).setTitle(newTitle);
-        Library.getInstance().getBooksList().get(bookPosition).setGenre(new Genre(newGenre));
+        Library.getInstance().getBooksList().get(bookPosition).setGenre(new Genre(newGenreNumber));
     }
 }

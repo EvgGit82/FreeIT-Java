@@ -25,7 +25,8 @@ public class EditBookMenu implements IMenu {
                     new PrintBookList().execute();
                     break;
                 case 2:
-                    new EditBook(prepareBookForEditing()).execute();
+                    int bookToEditId = prepareBookForEditing();
+                    new EditBook(bookToEditId).execute();
                     break;
                 case 0:
                     return;
