@@ -30,6 +30,8 @@ public class EditBookMenu implements IMenu {
                     break;
                 case 0:
                     return;
+                default:
+                    System.out.println("Wrong number!");
             }
         }
     }
