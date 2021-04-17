@@ -27,7 +27,7 @@ public class XMLTaskRunner {
 
         System.out.println("Parsing of xml-file and printing the results:");
 
-        List<Device> devicesFromXML = DOMparser.getObjectsFormXML(xmlFile);
+        List<Device> devicesFromXML = DOMparser.getObjectsFromXML(xmlFile);
 
         for (Device device : devicesFromXML) {
             System.out.println(device);

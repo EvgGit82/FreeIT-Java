@@ -21,7 +21,7 @@ public class DOMparser {
 
     private static Document document;
 
-    public static ArrayList<Device> getObjectsFormXML(File file) {
+    public static ArrayList<Device> getObjectsFromXML(File file) {
 
         try {
             DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
