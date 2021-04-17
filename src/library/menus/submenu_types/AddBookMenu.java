@@ -4,7 +4,7 @@ import library.db_commands.AddBook;
 import library.db_commands.AssembleBook;
 import library.entity_classes.Library;
 import library.utils.CommonProperties;
-import library.utils.GetNumberFromScanner;
+import library.utils.GetMenuOption;
 
 public class AddBookMenu implements IMenu {
 
@@ -23,7 +23,9 @@ public class AddBookMenu implements IMenu {
             System.out.println("1. Start adding a book");
             System.out.println("0. Return to Main menu");
 
-            switch (new GetNumberFromScanner().execute()) {
+            int option = new GetMenuOption(0, 1).execute();
+
+            switch (option) {
                 case 1:
                     new AddBook(new AssembleBook().execute()).execute();
                     System.out.println();

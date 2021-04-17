@@ -1,6 +1,7 @@
 package library;
 
 import library.menus.MainMenuController;
+import library.utils.GetMenuOption;
 import library.utils.GetNumberFromScanner;
 
 public class Application {
@@ -14,12 +15,7 @@ public class Application {
             System.out.println("4. Edit book info");
             System.out.println("0. Quit.");
 
-            int option;
-
-            do {
-                System.out.println("Select your option: ");
-                option = new GetNumberFromScanner().execute();
-            } while (option < 0 || option > 4);
+            int option = new GetMenuOption(0, 4).execute();
 
             new MainMenuController().runSubmenu(option);
         }

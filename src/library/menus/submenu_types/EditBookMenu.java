@@ -4,6 +4,7 @@ import library.db_commands.EditBook;
 import library.db_commands.PrintBookList;
 import library.entity_classes.Book;
 import library.entity_classes.Library;
+import library.utils.GetMenuOption;
 import library.utils.GetNumberFromScanner;
 
 import java.util.ArrayList;
@@ -20,7 +21,9 @@ public class EditBookMenu implements IMenu {
             System.out.println("2. Edit existing book from the library");
             System.out.println("0. Return to main menu");
 
-            switch (new GetNumberFromScanner().execute()){
+            int option = new GetMenuOption(0, 2).execute();
+
+            switch (option){
                 case 1:
                     new PrintBookList().execute();
                     break;

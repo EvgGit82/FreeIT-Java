@@ -3,6 +3,7 @@ package library.menus.submenu_types;
 import library.db_commands.DeleteBook;
 import library.db_commands.PrintBookList;
 import library.entity_classes.Library;
+import library.utils.GetMenuOption;
 import library.utils.GetNumberFromScanner;
 
 public class DeleteBookMenu implements IMenu {
@@ -23,9 +24,9 @@ public class DeleteBookMenu implements IMenu {
             System.out.println("0. Return to Main menu");
             System.out.println();
 
-            System.out.println("Select option: ");
+            int option = new GetMenuOption(0, 2).execute();
 
-            switch (new GetNumberFromScanner().execute()) {
+            switch (option) {
                 case 1:
                     new PrintBookList().execute();
                     break;
