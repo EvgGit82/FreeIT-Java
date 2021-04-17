@@ -2,7 +2,7 @@ package lesson_5.com.interfacetasks.spaceport;
 
 import lesson_5.com.interfacetasks.spaceport.spaceships.IStart;
 
-public class Spaceport {
+public class SpacePort {
 
     public void start (IStart start) throws InterruptedException {
         if (start.preflightSystemsCheck()) {
