@@ -1,6 +1,6 @@
 package lesson_10;
 
-import lesson_10.xmlprocessors.DOMparser;
+import lesson_10.xmlprocessors.DOMParser;
 import lesson_10.classes.Device;
 import lesson_10.xmlprocessors.XMLValidator;
 import org.xml.sax.SAXException;
@@ -27,7 +27,7 @@ public class XMLTaskRunner {
 
         System.out.println("Parsing of xml-file and printing the results:");
 
-        List<Device> devicesFromXML = DOMparser.getObjectsFromXML(xmlFile);
+        List<Device> devicesFromXML = DOMParser.getObjectsFromXML(xmlFile);
 
         for (Device device : devicesFromXML) {
             System.out.println(device);
