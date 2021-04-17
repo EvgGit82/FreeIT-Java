@@ -18,7 +18,7 @@ import java.io.IOException;
 public class XMLTaskRunner {
 
     public static final String VALIDATION_SCHEME_PATH = "src/lesson_10/xmls/validationScheme.xsd";
-    public static final String XML_PATH = "src/lesson_10/xmls/device.xml";
+    public static final String XML_PATH = "src/lesson_10/xmls/devices.xml";
 
     public static void main(String[] args) {
 
