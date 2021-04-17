@@ -1,0 +1,60 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="device">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name ="name" type="xsd:string"></xsd:element>
+                <xsd:element name="origin" type="xsd:string"></xsd:element>
+                <xsd:element name="price">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="currency" type="threeLettersUpperCase"></xsd:element>
+                            <xsd:element name="priceValue" type="doubleValueRestriction"></xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <xsd:element name="type">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="isPeripheral" type="xsd:boolean"></xsd:element>
+                            <xsd:element name="energyConsumption">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="ECunit" type="xsd:string"></xsd:element>
+                                        <xsd:element name="ECvalue" type="xsd:double"></xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="coolerAvailability" type="xsd:boolean"></xsd:element>
+                            <xsd:element name="ports">
+                                <xsd:complexType>
+                                    <xsd:choice>
+                                        <xsd:element name="DVI" type="threeLettersUpperCase"></xsd:element>
+                                        <xsd:element name="VGA" type="threeLettersUpperCase"></xsd:element>
+                                    </xsd:choice>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="isCritical" type="xsd:boolean"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:simpleType name="doubleValueRestriction">
+        <xsd:restriction base="xsd:double">
+            <xsd:pattern value="[1-9]+(.)[0-9]{0,2}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="threeLettersUpperCase">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[A-Z]{3}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>
