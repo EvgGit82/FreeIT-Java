@@ -19,9 +19,9 @@ import java.util.ArrayList;
 
 public class DOMparser {
 
-    public static ArrayList<Device> getObjectsFormXML(File file) {
+    private static Document document;
 
-        Document document = null;
+    public static ArrayList<Device> getObjectsFormXML(File file) {
 
         try {
             DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
