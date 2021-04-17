@@ -40,7 +40,7 @@
     <xsd:complexType name="EnergyConsumption">
         <xsd:sequence>
             <xsd:element name="ECunit" type="xsd:string"/>
-            <xsd:element name="ECvalue" type="xsd:double"/>
+            <xsd:element name="ECvalue" type="doubleValueRestriction"/>
         </xsd:sequence>
     </xsd:complexType>
 
