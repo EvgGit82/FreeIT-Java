@@ -10,6 +10,9 @@ public class Device {
     private Type type;
     private boolean isCritical;
 
+    public Device() {
+    }
+
     public Device(String name, String origin, Price price, Type type, boolean isCritical) {
         this.name = name;
         this.origin = origin;
@@ -78,4 +81,5 @@ public class Device {
         return "Device [name = " + name + ", origin = " + origin + ", price = " + price + ", type = " + type +
                 ", functionally critical = " + isCritical + ']';
     }
+
 }

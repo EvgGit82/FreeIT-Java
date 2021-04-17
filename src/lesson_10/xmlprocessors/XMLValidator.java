@@ -1,4 +1,4 @@
-package lesson_10;
+package lesson_10.xmlprocessors;
 
 import org.xml.sax.SAXException;
 
@@ -24,5 +24,4 @@ public class XMLValidator {
         }
         System.out.println("This a valid XML file.");
     }
-
 }
