@@ -12,6 +12,6 @@ public class Price {
 
     @Override
     public String toString() {
-        return "Price [" + currency + ": " + priceValue + ']';
+        return  currency + " " + priceValue;
     }
 }

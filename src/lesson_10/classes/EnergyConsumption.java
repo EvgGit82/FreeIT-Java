@@ -12,6 +12,6 @@ public class EnergyConsumption {
 
     @Override
     public String toString() {
-        return "energy consumption = " + ECvalue + " " + ECunit;
+        return ECvalue + " " + ECunit;
     }
 }
