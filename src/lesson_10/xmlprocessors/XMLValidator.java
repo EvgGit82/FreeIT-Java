@@ -22,6 +22,6 @@ public class XMLValidator {
             System.out.println("What went wrong: " + e.getMessage());
             System.out.println("Validation failed.");
         }
-        System.out.println("This a valid XML file.");
+        System.out.println("This is a valid XML file.");
     }
 }
