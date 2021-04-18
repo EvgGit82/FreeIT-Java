@@ -5,6 +5,10 @@ import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
+/*
+Сеарилизовать объект Автомобиль(Марка, скорость, цена). После сериализации произвести обратный процесс.
+*/
+
 public class Runner {
 
     private static final String TARGET_FILE = "src/lesson_8/additionaltasks/Task4/auto.dat";
