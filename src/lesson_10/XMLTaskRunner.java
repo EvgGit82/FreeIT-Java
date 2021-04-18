@@ -3,13 +3,9 @@ package lesson_10;
 import lesson_10.xmlprocessors.DOMParser;
 import lesson_10.classes.Device;
 import lesson_10.xmlprocessors.XMLValidator;
-import org.xml.sax.SAXException;
 
-import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
-import java.io.IOException;
 import java.util.List;
-
 
 /*
 Создать xml-файл, хранящий информацию об объектах предметной области ниже. Для валидации полученного xml-файла
@@ -38,7 +34,7 @@ public class XMLTaskRunner {
     public static final String XML_PATH = "src/lesson_10/xmls/devices.xml";
     private static File xmlFile = new File(XML_PATH);
 
-    public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
+    public static void main(String[] args)  {
 
         System.out.println("Validation of xml-file:");
 
