@@ -11,6 +11,27 @@ import java.io.IOException;
 import java.util.List;
 
 
+/*
+Создать xml-файл, хранящий информацию об объектах предметной области ниже. Для валидации полученного xml-файла
+необходимо разработать соответствующую xsd схему.
+1. Общие требования:
+- Простые и комплексные типы
+- Шаблоны и предельные значения
+- Обязательно использование атрибутов и типа ID
+- Задание атрибутов по умолчанию
+2. Произвести проверку XML-документа с помощью XSD.
+3. Предметная область:
+Компьютерные комплектующие:
+- Name - название комплектующего
+- Origin - страна производства
+- Price - цена (0 - n USD)
+- Type (должно быть несколько)
+- периферийное либо нет, энергопотребление (ватт), наличие кулера( есть или нет), группа комплектующих
+(устройства ввода-вывода, мультимедийные), порты (COM, USB, LPT)
+- Critical - критично ли наличие комплектующего для работы компьютера.
+Корневой элемент назвать Devices
+*/
+
 public class XMLTaskRunner {
 
     public static final String VALIDATION_SCHEME_PATH = "src/lesson_10/xmls/validationScheme.xsd";
@@ -32,5 +53,10 @@ public class XMLTaskRunner {
         for (Device device : devicesFromXML) {
             System.out.println(device);
         }
+
+        System.out.println();
+
+        System.out.println("Now we can work with the objects: ");
+        System.out.println("First device name is '" + devicesFromXML.get(0).getName() + "'");
     }
 }
