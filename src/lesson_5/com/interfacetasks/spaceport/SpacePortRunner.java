@@ -35,11 +35,11 @@ import java.util.List;
 
 */
 
-public class SpaceportRunner {
+public class SpacePortRunner {
 
     public static void main(String[] args) throws InterruptedException {
 
-        Spaceport spaceport = new Spaceport();
+        SpacePort spaceport = new SpacePort();
 
         List<IStart> spaceshipsList = new ArrayList<>();
 

@@ -1,0 +1,47 @@
+<?xml version = "1.0" encoding="UTF-8" ?>
+
+<devices>
+
+    <device>
+        <name>ViewSonic</name>
+        <origin>USA</origin>
+        <price>
+            <currency>USD</currency>
+            <priceValue>245.0</priceValue>
+        </price>
+        <type>
+            <isPeripheral>true</isPeripheral>
+            <energyConsumption>
+                <ECunit>Watt</ECunit>
+                <ECvalue>21.7</ECvalue>
+            </energyConsumption>
+            <coolerAvailability>false</coolerAvailability>
+            <ports>
+                <DVI>DVI</DVI>
+            </ports>
+        </type>
+        <isCritical>true</isCritical>
+    </device>
+
+    <device>
+        <name>HP L1908w</name>
+        <origin>China</origin>
+        <price>
+            <currency>EUR</currency>
+            <priceValue>105</priceValue>
+        </price>
+        <type>
+            <isPeripheral>true</isPeripheral>
+            <energyConsumption>
+                <ECunit>Watt</ECunit>
+                <ECvalue>24.0</ECvalue>
+            </energyConsumption>
+            <coolerAvailability>false</coolerAvailability>
+            <ports>
+                <DVI>VGA</DVI>
+            </ports>
+        </type>
+        <isCritical>true</isCritical>
+    </device>
+
+</devices>
