@@ -23,6 +23,6 @@ public class CommonProperties {
             result.append(pair.getKey()).append("-").append(pair.getValue()).append(", ");
 
         }
-            return "\"" + result.substring(0, result.length()-2) + "\"";
+            return "\"" + result.substring(0, result.length()-2).replace("_", " ") + "\"";
     }
 }
