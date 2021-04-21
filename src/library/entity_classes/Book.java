@@ -2,7 +2,7 @@ package library.entity_classes;
 
 import library.utils.CommonProperties;
 
-import java.util.ArrayList;;
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Book implements Comparable{
@@ -10,7 +10,7 @@ public class Book implements Comparable{
     private int id;
     private String title;
     private Genre genre;
-    private long timeCreated;
+    private final long timeCreated;
 
     public Book(String title, Genre genre) {
         generateUniqueId();
