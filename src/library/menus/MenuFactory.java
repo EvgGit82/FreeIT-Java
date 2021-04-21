@@ -2,29 +2,19 @@ package library.menus;
 
 import library.menus.submenu_types.*;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MenuFactory {
 
-    private IMenu subMenu;
-
     public IMenu createSubMenu(int option) {
+        Map <Integer, IMenu> subMenus = new HashMap<>();
+        subMenus.put(1, new SortingMenu());
+        subMenus.put(2, new AddBookMenu());
+        subMenus.put(3, new DeleteBookMenu());
+        subMenus.put(4, new EditBookMenu());
+        subMenus.put(0, new QuitMenu());
 
-        switch (option) {
-            case 1:
-                subMenu = new SortingMenu();
-                break;
-            case 2:
-                subMenu = new AddBookMenu();
-                break;
-            case 3:
-                subMenu = new DeleteBookMenu();
-                break;
-            case 4:
-                subMenu = new EditBookMenu();
-                break;
-            case 0:
-                subMenu = new QuitMenu();
-                break;
-        }
-        return subMenu;
+        return subMenus.get(option);
     }
 }
