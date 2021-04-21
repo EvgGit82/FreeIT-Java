@@ -56,14 +56,9 @@ Id вообще вы сами не передаете ни при создани
 
 */
 
-
-import library.testdata.LoadTestData;
-
 public class Runner {
 
     public static void main(String[] args) throws InterruptedException {
-
-        new LoadTestData().execute();
 
         new Application().start();
 

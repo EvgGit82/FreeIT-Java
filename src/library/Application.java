@@ -1,10 +1,15 @@
 package library;
 
 import library.menus.MainMenuController;
+import library.testdata.LoadTestData;
 import library.utils.GetMenuOption;
 import library.utils.GetNumberFromScanner;
 
 public class Application {
+
+    public Application() {
+        new LoadTestData().execute();
+    }
 
     public void start() {
 
