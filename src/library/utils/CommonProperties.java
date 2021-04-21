@@ -16,10 +16,8 @@ public class CommonProperties {
 
     private static String getGenresRepresentation (){
         StringBuilder result = new StringBuilder();
-        Iterator <Map.Entry<Integer, GenreName>> iterator = new Genre(0).getGenresList().entrySet().iterator();
 
-        while (iterator.hasNext()) {
-            Map.Entry<Integer, GenreName> pair =  iterator.next();
+        for (Map.Entry<Integer, GenreName> pair : new Genre(0).getGenresList().entrySet()) {
             result.append(pair.getKey()).append("-").append(pair.getValue()).append(", ");
 
         }
