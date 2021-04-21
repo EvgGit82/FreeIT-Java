@@ -3,8 +3,6 @@ package library.utils;
 import library.entity_classes.Genre;
 import library.enums.GenreName;
 
-
-import java.util.Iterator;
 import java.util.Map;
 
 public class CommonProperties {
