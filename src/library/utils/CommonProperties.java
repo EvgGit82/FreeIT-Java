@@ -15,12 +15,12 @@ public class CommonProperties {
 
 
     private static String getGenresRepresentation (){
-        String result = "";
+        StringBuilder result = new StringBuilder();
         Iterator iterator = new Genre(0).getGenresList().entrySet().iterator();
 
         while (iterator.hasNext()) {
             Map.Entry<Iterator, GenreName> pair = ( Map.Entry<Iterator, GenreName>) iterator.next();
-            result += pair.getKey() + "-" + pair.getValue() + ", ";
+            result.append(pair.getKey()).append("-").append(pair.getValue()).append(", ");
 
         }
             return "\"" + result.substring(0, result.length()-2) + "\"";

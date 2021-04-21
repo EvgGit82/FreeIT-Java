@@ -12,6 +12,6 @@ public enum GenreName {
     ROMANCE,
     BIOGRAPHY,
     RELIGION,
-    NO_GENRE
+    NO_GENRE,
 }
 
