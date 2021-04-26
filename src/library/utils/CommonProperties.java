@@ -17,7 +17,6 @@ public class CommonProperties {
 
         for (Map.Entry<Integer, GenreName> pair : new Genre(0).getGenresList().entrySet()) {
             result.append(pair.getKey()).append("-").append(pair.getValue()).append(", ");
-
         }
             return result.substring(0, result.length()-2).replace("_", " ");
     }
