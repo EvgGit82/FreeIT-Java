@@ -1,6 +1,7 @@
 package lesson_12.multithread_library.mainfunctionality;
 
 import lesson_12.multithread_library.Properties;
+import lesson_12.multithread_library.lists.Containers;
 import lesson_12.multithread_library.lists.CustomerNames;
 import lesson_12.multithread_library.lists.CustomerReplies;
 import lesson_12.multithread_library.lists.OkayPhrases;
@@ -138,7 +139,8 @@ class Library {
         }
 
         if (book.isHardCover()) {
-            System.out.println(customerName + " puts the book in the bag.");
+            System.out.println(customerName + " puts the book in the "
+                    + Containers.containers.get(new Random().nextInt(Containers.containers.size())-1) + ".");
             return;
         } else {
 
