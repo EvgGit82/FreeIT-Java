@@ -91,7 +91,7 @@ public class MultithreadingLibrary {
 class Library {
 
     private List<Book> libraryBooksList;
-    private Semaphore librarians = new Semaphore(Properties.NUMBER_OF_LIBRARIANS);
+    private Semaphore customersServedSimultaneously = new Semaphore(Properties.NUMBER_OF_CUSTOMERS_SERVED_BY_LIBRARIAN);
 
 
     public Library(List<Book> libraryBooksList) {
@@ -99,11 +99,11 @@ class Library {
     }
 
     public void customerServicing (String customerName) throws InterruptedException {
-        librarians.acquire();
+        customersServedSimultaneously.acquire();
         try{
             customerActions(customerName);
         } finally {
-            librarians.release();
+            customersServedSimultaneously.release();
         }
     }
 
@@ -124,7 +124,7 @@ class Library {
         Book book = getBookFromLibraryList();
 
         synchronized (this) {
-            System.out.println(customerName + " comes up to a librarian and says: \"I want to read a(an) "
+            System.out.println(customerName + " comes up to the librarian and says: \"I want to read a(an) "
                     + book.getGenre().toString().toLowerCase() + " book.\" "
                     + "It would be nice to read '" + book.getTitle() + "' by " + book.getAuthor() + "\"");
 
