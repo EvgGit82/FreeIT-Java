@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="books">
+        <xsd:complexType>
+            <xsd:sequence>
+
+                <xsd:element name="book" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="title" type="xsd:string"/>
+                            <xsd:element name="author" type="xsd:string"/>
+                            <xsd:element name="genre" type="xsd:string"/>
+                            <xsd:element name="year" type="yearValueRestriction"/>
+                            <xsd:element name="isHardCover" type="xsd:boolean"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+
+    </xsd:element>
+
+    <xsd:simpleType name="yearValueRestriction">
+        <xsd:restriction base="xsd:int">
+            <xsd:pattern value="[0-9]{1,4}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>

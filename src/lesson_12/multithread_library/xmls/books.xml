@@ -1,0 +1,404 @@
+<?xml version = "1.0" encoding="UTF-8" ?>
+
+<books>
+    <book>
+        <title>Treasure Island</title>
+        <author>Stevenson</author>
+        <genre>adventure</genre>
+        <year>2017</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>Fifty Shades of Grey</title>
+        <author>E.L. James</author>
+        <genre>romance</genre>
+        <year>2011</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>Gone With the Wind</title>
+        <author>Margaret Mitchell</author>
+        <genre>romance</genre>
+        <year>1939</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>Lord of the Rings</title>
+        <author>J. R. R. Tolkien</author>
+        <genre>fantasy</genre>
+        <year>1937</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>Jurassic Park</title>
+        <author>Michael Crichton</author>
+        <genre>adventure</genre>
+        <year>1990</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>Shining</title>
+        <author>Stephen King</author>
+        <genre>horror</genre>
+        <year>1977</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>Pet Samatary</title>
+        <author>Stephen King</author>
+        <genre>horror</genre>
+        <year>1983</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>Dune</title>
+        <author>Frank Herbert</author>
+        <genre>adventure</genre>
+        <year>1965</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>Gone Girl</title>
+        <author>Gillian Flynn</author>
+        <genre>thriller</genre>
+        <year>2012</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>Criminal</title>
+        <author>Will Trent</author>
+        <genre>thriller</genre>
+        <year>2016</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>Churchill: A Life</title>
+        <author>Martin Gilbert</author>
+        <genre>biography</genre>
+        <year>1991</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>A Beautiful Mind</title>
+        <author>Sylvia Nasar</author>
+        <genre>biography</genre>
+        <year>1998</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>Alexander Hamilton</title>
+        <author>Ron Chernow</author>
+        <genre>biography</genre>
+        <year>2004</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>Why I am not a Christian</title>
+        <author>Bertrand Russell</author>
+        <genre>religion</genre>
+        <year>1927</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>The Miracle of Theism: Arguments For and Against the Existence of God</title>
+        <author>John Mackie</author>
+        <genre>religion</genre>
+        <year>1982</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>A Song of Ice and Fire</title>
+        <author>George R. R. Martin</author>
+        <genre>fantasy</genre>
+        <year>1996</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>Chronicles of the Black Company</title>
+        <author>Glen Cook</author>
+        <genre>fantasy</genre>
+        <year>1944</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>And Then There Were None</title>
+        <author>Agatha Christie</author>
+        <genre>mystery</genre>
+        <year>1940</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>The Big Sleep</title>
+        <author>Raymond Chandler</author>
+        <genre>mystery</genre>
+        <year>1939</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>The Postman Always Rings Twice</title>
+        <author>James M. Cain</author>
+        <genre>mystery</genre>
+        <year>1934</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>In Cold Blood</title>
+        <author>Truman Capote</author>
+        <genre>mystery</genre>
+        <year>1966</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>Woman in White</title>
+        <author>Wilkie Collins</author>
+        <genre>mystery</genre>
+        <year>1859</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>Don Quixote</title>
+        <author>Miguel de Cervantes</author>
+        <genre>adventure</genre>
+        <year>1600</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>The Count of Monte Cristo</title>
+        <author>Alexandre Dumas</author>
+        <genre>adventure</genre>
+        <year>1844</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>Ivanhoe</title>
+        <author>Walter Scott</author>
+        <genre>adventure</genre>
+        <year>1819</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>Heart of Darkness</title>
+        <author>Joseph Conrad</author>
+        <genre>adventure</genre>
+        <year>1899</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>Frankenstein</title>
+        <author>Mary Shelley</author>
+        <genre>horror</genre>
+        <year>1818</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>Dracula</title>
+        <author>Bram Stoker</author>
+        <genre>horror</genre>
+        <year>1897</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>At the Mountains of Madness</title>
+        <author>H. P. Lovecraft</author>
+        <genre>horror</genre>
+        <year>1936</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>The Bad Seed</title>
+        <author>William March</author>
+        <genre>horror</genre>
+        <year>1954</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>Pride and Prejudice</title>
+        <author>Jane Austen</author>
+        <genre>romance</genre>
+        <year>1813</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>Romeo and Juliet</title>
+        <author>William Shakespeare</author>
+        <genre>romance</genre>
+        <year>1597</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>The Notebook</title>
+        <author>Nicholas Sparks</author>
+        <genre>romance</genre>
+        <year>1996</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>Birdsong</title>
+        <author>Sebastian Faulks</author>
+        <genre>romance</genre>
+        <year>1993</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>Something Borrowed</title>
+        <author>Emily Giffin</author>
+        <genre>romance</genre>
+        <year>2004</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>The God Delusion</title>
+        <author>Richard Dawkins</author>
+        <genre>religion</genre>
+        <year>2006</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>Zealot: The Life and Times of Jesus of Nazareth</title>
+        <author>Reza Aslan</author>
+        <genre>religion</genre>
+        <year>2013</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>Letter of Christian Nation</title>
+        <author>Sam Harris</author>
+        <genre>religion</genre>
+        <year>2006</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>The Great Divorce</title>
+        <author>C. S. Lewis</author>
+        <genre>religion</genre>
+        <year>1945</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>The Guest List</title>
+        <author>Lucy Foley</author>
+        <genre>thriller</genre>
+        <year>2020</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>Nine Perfect Strangers</title>
+        <author>Liane Moriarty</author>
+        <genre>thriller</genre>
+        <year>2018</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>The Herd</title>
+        <author>Andrea Bartz</author>
+        <genre>thriller</genre>
+        <year>2020</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>Stillhouse Lake</title>
+        <author>Rachel Caine</author>
+        <genre>thriller</genre>
+        <year>2017</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>The Turn of the Key</title>
+        <author>Ruth Ware</author>
+        <genre>thriller</genre>
+        <year>2019</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>In a Dark, Dark Wood</title>
+        <author>Ruth Ware</author>
+        <genre>thriller</genre>
+        <year>2015</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>A Hero Born</title>
+        <author>Jin Yong</author>
+        <genre>fantasy</genre>
+        <year>1957</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>The Wandering Unicorn</title>
+        <author>Manuel Mujica Lainez</author>
+        <genre>fantasy</genre>
+        <year>1965</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>The Dark Is Rising</title>
+        <author>Susan Cooper</author>
+        <genre>fantasy</genre>
+        <year>1973</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+    <book>
+        <title>Neverwhere</title>
+        <author>Neil Gaiman</author>
+        <genre>fantasy</genre>
+        <year>2009</year>
+        <isHardCover>true</isHardCover>
+    </book>
+
+    <book>
+        <title>Harry Potter and the Half-Blood Prince</title>
+        <author>J.K. Rowling</author>
+        <genre>fantasy</genre>
+        <year>2005</year>
+        <isHardCover>false</isHardCover>
+    </book>
+
+</books>
