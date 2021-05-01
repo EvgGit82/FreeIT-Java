@@ -124,7 +124,7 @@ class Library {
         Book book = getBookFromLibraryList();
 
         synchronized (this) {
-            System.out.println(customerName + " comes up to the librarian and says: \"I want to read a(an) "
+            System.out.println(customerName + " comes up to a librarian and says: \"I want to read a(an) "
                     + book.getGenre().toString().toLowerCase() + " book.\" "
                     + "It would be nice to read '" + book.getTitle() + "' by " + book.getAuthor() + "\"");
 
