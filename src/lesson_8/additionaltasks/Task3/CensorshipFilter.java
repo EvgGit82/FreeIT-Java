@@ -54,7 +54,7 @@ public class CensorshipFilter {
     public CensorshipFilter filterBlacklistedWords () {
         for (int i = 0; i < separateSentences.size(); i++) {
             A:    for (String profaneWord : blacklist) {
-                if (separateSentences.get(i).contains(profaneWord)){
+                if (separateSentences.get(i).toLowerCase().contains(profaneWord)){
                     sentencesFilteredOut.add(separateSentences.get(i));
                     break A;
                 }
