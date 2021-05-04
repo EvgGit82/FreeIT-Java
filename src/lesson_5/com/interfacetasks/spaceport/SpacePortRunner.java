@@ -39,7 +39,7 @@ public class SpaceportRunner {
 
     public static void main(String[] args) throws InterruptedException {
 
-        Spaceport spaceport = new Spaceport();
+        SpacePort spaceport = new SpacePort();
 
         List<IStart> spaceshipsList = new ArrayList<>();
 
