@@ -1,0 +1,3 @@
+SENTENCES BELOW 6 WORDS FROM THE SOURCE FILE CONTAINING PALINDROMES: 
+Madam How is wiser.
+Madam How was not sorry.

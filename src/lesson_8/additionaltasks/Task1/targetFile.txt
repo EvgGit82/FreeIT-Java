@@ -1,0 +1,20 @@
+PALINDROMES FILTERED FROM THE SOURCE FILE: 
+Anna
+Civic
+Kayak
+Level
+Madam
+Mom
+Noon
+Racecar
+Radar
+Redder
+Refer
+Repaper
+Rotator
+Rotor
+Sagas
+Solos
+Stats
+Tenet
+Wow
